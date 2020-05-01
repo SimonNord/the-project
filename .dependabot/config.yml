@@ -5,7 +5,7 @@ update_configs:
     update_schedule: "live"
     ignored_updates:
       - match:
-          dependency_name: "node"
+          dependency_name: "@types/node"
           version_requirement: "^12"
     automerged_updates:
       - match:
