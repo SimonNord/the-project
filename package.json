@@ -25,8 +25,13 @@
     "typescript": "3.8.3"
   },
   "scripts": {
+    "check-node-version": "npx check-node-version --node $(cat .nvmrc)",
+    "preinstall": "npm run check-node-version",
+    "prestart": "npm run check-node-version",
     "start": "react-scripts start",
+    "prebuild": "npm run check-node-version",
     "build": "react-scripts build",
+    "pretest": "npm run check-node-version",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
