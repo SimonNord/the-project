@@ -4,7 +4,8 @@
   "private": true,
   "author": "Mo Sattler",
   "contributors": [
-    "Mo Sattler"
+    "Mo Sattler",
+    "Simon Nordström"
   ],
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
