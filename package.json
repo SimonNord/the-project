@@ -1,11 +1,11 @@
 {
   "name": "project-template",
+  "homepage": "/the-project",
   "version": "0.1.0",
   "private": true,
   "author": "Mo Sattler",
   "contributors": [
     "Mo Sattler",
-    "John Doe",
     "Liam",
     "Ruaridh"
   ],
