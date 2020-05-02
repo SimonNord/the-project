@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { createGlobalStyle } from 'styled-components/macro'
+// @ts-ignore needs to be imported to make css prop work
 import * as types from 'styled-components/cssprop'
 
 const GlobalStyle = createGlobalStyle`
