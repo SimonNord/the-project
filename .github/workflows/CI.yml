@@ -20,6 +20,7 @@ jobs:
       - name: run tests
         run: |
           npm ci
+          npm run lint
           npm test
 
   release:
