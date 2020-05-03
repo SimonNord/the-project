@@ -2,7 +2,6 @@ import React from "react";
 import "styled-components/macro";
 import { Color } from "variables";
 import { User } from "types";
-import UserCard from "./components/UserCard/UserCard";
 
 type Props = {
   className?: string;
@@ -16,9 +15,7 @@ const SideBar = (props: Props) => {
       css={`
         background-color: ${Color.Cinder};
       `}
-    >
-      <UserCard user={props.user} />
-    </div>
+    />
   );
 };
 
