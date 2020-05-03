@@ -6,7 +6,7 @@ type Props = {
 };
 
 const UserCard = (props: Props) => {
-  return <div>{props.user.firstName}</div>;
+  return <div>{props.user.firstName}!</div>;
 };
 
 export default UserCard;

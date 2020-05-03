@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import SideBar from "./components/Sidebar/SideBar";
 import Content from "./components/Content/Content";
+import GlobalStyle from "./GlobalStyle";
 
 const Container = styled.div`
   display: flex;
@@ -16,16 +17,19 @@ const HARDCODED_USER = {
 
 function App() {
   return (
-    <Container>
-      <SideBar
-        css={`
-          width: 270px;
-          height: 100vh;
-        `}
-        user={HARDCODED_USER}
-      />
-      <Content />
-    </Container>
+    <>
+      <Container>
+        <SideBar
+          css={`
+            width: 270px;
+            height: 100vh;
+          `}
+          user={HARDCODED_USER}
+        />
+        <Content />
+      </Container>
+      <GlobalStyle />
+    </>
   );
 }
 
