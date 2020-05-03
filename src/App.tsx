@@ -9,9 +9,9 @@ const Container = styled.div`
 `;
 
 const HARDCODED_USER = {
-  first_name: "John",
-  last_name: "Doe",
-  email: "john@doesNotReject.com",
+  firstName: "John",
+  lastName: "Doe",
+  email: "john@doe.com",
 };
 
 function App() {
