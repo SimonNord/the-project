@@ -8,6 +8,12 @@ const Container = styled.div`
   flex-direction: row;
 `
 
+const HARDCODED_USER = {
+  first_name: "John",
+  last_name: "Doe",
+  email: "john@doesNotReject.com"
+}
+
 function App() {
   return (
     <Container>
@@ -16,6 +22,7 @@ function App() {
           width: 270px;
           height: 100vh;
         `}
+        user={HARDCODED_USER}
       />
       <Content />
     </Container>
