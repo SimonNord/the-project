@@ -68,7 +68,7 @@ const UserCard = (props: Props) => {
   return (
     <div style={container}>
       <div style={divStyles}>
-        <img style={imageStyles} src="avatar-image.png" alt="avatar Image" />
+        <img style={imageStyles} src="avatar-image.png" />
         <div style={textDiv}>
           <p style={nameStyles}>{props.user.firstName}!</p>
           <a style={emailStyles} href="#">
@@ -79,7 +79,7 @@ const UserCard = (props: Props) => {
           onClick={() => setShow((show = !show))}
           style={arrowStyles}
           src="./chevron-down.svg"
-          alt=""
+          alt="toggle menu"
         />
       </div>
       {show ? (
