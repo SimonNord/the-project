@@ -1,24 +1,21 @@
 import React from "react";
-import { Color } from './variables'
 import styled from "styled-components/macro"
+import SideBar from './components/Sidebar/SideBar'
 
 const Container = styled.div`
   display: flex;
   flex-direction: row;
 `
 
-const SideBar = styled.div`
-  width: 270px;
-  height: 100vh;
-  background-color: ${Color.Cinder};
-`
-
 function App() {
   return (
     <Container>
-      <SideBar>
-        This will be the sidebar
-      </SideBar>
+      <SideBar
+        css={`
+          width: 270px;
+          height: 100vh;
+        `}
+      />
       <div>
         this is the content
       </div>
