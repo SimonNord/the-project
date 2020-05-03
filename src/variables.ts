@@ -3,4 +3,5 @@ export enum Color {
   LimedSpruce = "rgb(57, 67, 78)",
   White = "rgb(255,255,255)",
   CodGray = "rgb(18, 18, 18)",
+  DodgerBlue = "rgb(67, 124, 255)",
 }
