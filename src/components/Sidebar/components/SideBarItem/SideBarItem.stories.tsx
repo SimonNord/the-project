@@ -1,13 +1,13 @@
 import React from "react";
-import Button from "./Button";
+import SideBarItem from "./SideBarItem";
 import "styled-components/macro";
 
 export default {
-  title: "Button",
+  title: "SideBarItem",
 };
 
-export const ButtonStory = () => (
-  <Button>
+export const SideBarItemStory = () => (
+  <SideBarItem>
     <text
       css={`
         font-weight: 500;
@@ -16,11 +16,11 @@ export const ButtonStory = () => (
         line-height: 18px;
       `}
     >
-      Add New...
+      Progress
     </text>
-  </Button>
+  </SideBarItem>
 );
 
-ButtonStory.story = {
+SideBarItemStory.story = {
   name: "default",
 };
