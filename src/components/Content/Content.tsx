@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Content = () => {
+type Props = {
+  className?: string,
+}
+
+const Content = (props: Props) => {
     return (
-      <div>
+      <div className={props.className}>
         this is the content
         </div>
     )
