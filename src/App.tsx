@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro"
 import SideBar from './components/Sidebar/SideBar'
+import Content from './components/Content/Content'
 
 const Container = styled.div`
   display: flex;
@@ -16,9 +17,7 @@ function App() {
           height: 100vh;
         `}
       />
-      <div>
-        this is the content
-      </div>
+      <Content />
     </Container>
   );
 }
