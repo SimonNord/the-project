@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { createGlobalStyle } from 'styled-components/macro'
+import { createGlobalStyle } from "styled-components/macro";
 // types needs to be imported to make the css prop work
-import * as types from 'styled-components/cssprop' // eslint-disable-line @typescript-eslint/no-unused-vars
+import * as types from "styled-components/cssprop"; // eslint-disable-line @typescript-eslint/no-unused-vars
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
   }
-`
+`;
 
 ReactDOM.render(
   <React.StrictMode>

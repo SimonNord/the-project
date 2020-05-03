@@ -1,16 +1,12 @@
-import React from 'react'
-import { User } from 'types'
+import React from "react";
+import { User } from "types";
 
 type Props = {
-    user: User,
-}
+  user: User;
+};
 
 const UserCard = (props: Props) => {
-    return (
-        <div>
-            {props.user.firstName}
-        </div>
-    )
-}
+  return <div>{props.user.firstName}</div>;
+};
 
-export default UserCard
+export default UserCard;

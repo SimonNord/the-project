@@ -1,18 +1,18 @@
 import React from "react";
-import styled from "styled-components/macro"
-import SideBar from './components/Sidebar/SideBar'
-import Content from './components/Content/Content'
+import styled from "styled-components/macro";
+import SideBar from "./components/Sidebar/SideBar";
+import Content from "./components/Content/Content";
 
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-`
+`;
 
 const HARDCODED_USER = {
   first_name: "John",
   last_name: "Doe",
-  email: "john@doesNotReject.com"
-}
+  email: "john@doesNotReject.com",
+};
 
 function App() {
   return (
