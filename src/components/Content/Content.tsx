@@ -1,15 +1,11 @@
-import React from 'react'
+import React from "react";
 
 type Props = {
-  className?: string,
-}
+  className?: string;
+};
 
 const Content = (props: Props) => {
-    return (
-      <div className={props.className}>
-        this is the content
-        </div>
-    )
-}
+  return <div className={props.className}>this is the content</div>;
+};
 
-export default Content
+export default Content;
