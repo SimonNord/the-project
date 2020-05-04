@@ -6,6 +6,10 @@ type Props = {
   children: ReactNode;
 };
 
+// const Progress = styled.button`
+
+// `;
+
 const SideBarItem = (props: Props) => {
   return (
     <div
@@ -13,6 +17,7 @@ const SideBarItem = (props: Props) => {
         background-color: ${Color.White};
       `}
     >
+      {/* <Progress /> */}
       content: {props.children}
     </div>
   );
