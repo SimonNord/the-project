@@ -4,6 +4,7 @@ import { User } from "types";
 import { Color } from "../../../../variables";
 import { withTheme } from "styled-components";
 import { ReactComponent as ChevronDown } from "./assets/chevron-down.svg";
+import avatar from "./assets/avatar-image.png";
 
 type Props = {
   user: User;
@@ -50,7 +51,10 @@ const imageStyles = {
   borderRadius: "3px",
 };
 
-const arrowStyles = {};
+const arrowStyles = {
+  alignSelf: "center",
+  marginLeft: "30px",
+};
 
 const expandedList = {
   textAlign: "left",
@@ -71,10 +75,10 @@ const UserCard = (props: Props) => {
   return (
     <div style={container}>
       <div style={divStyles}>
-        <img style={imageStyles} src="./assets/avatar-image.png" alt="" />
+        <img style={imageStyles} src={avatar} alt="" />
         <div style={textDiv}>
           <p style={nameStyles}>{props.user.firstName}!</p>
-          <a style={emailStyles} href="#">
+          <a style={emailStyles} href="">
             {props.user.email}
           </a>
         </div>
