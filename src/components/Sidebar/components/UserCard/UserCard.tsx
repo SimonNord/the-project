@@ -53,7 +53,8 @@ const arrowStyles = {
 
 const expandedList = {
   backgroundColor: "white",
-  textAlign: "center",
+  textAlign: "left",
+  padding: "15px",
 };
 const expandedListText = {
   fontSize: "15px",
@@ -82,12 +83,10 @@ const UserCard = (props: Props) => {
           alt="toggle menu"
         />
       </div>
-      {show ? (
+      {show && (
         <div style={expandedList}>
           <p style={expandedListText}>Profile & Settings</p>
         </div>
-      ) : (
-        ""
       )}
     </div>
   );
