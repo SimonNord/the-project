@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { User } from "types";
 import { Color } from "../../../../variables";
+import styles from "./styles.module.css";
 
 type Props = {
   user: User;
@@ -49,14 +50,16 @@ const imageStyles = {
 
 const arrowStyles = {
   justifySelf: "flex-end",
+  fontSize: "15px",
 };
 
 const expandedList = {
-  backgroundColor: "white",
   textAlign: "left",
   padding: "15px",
+  width: "200px",
 };
-const expandedListText = {
+
+const expandedListItem = {
   fontSize: "15px",
   lineHeight: "18px",
   fontWeight: 500,
@@ -84,8 +87,12 @@ const UserCard = (props: Props) => {
         />
       </div>
       {show && (
-        <div style={expandedList}>
-          <p style={expandedListText}>Profile & Settings</p>
+        <div
+          style={expandedList}
+          className={show ? styles.collapsedListItem : styles.expandedListItem}
+        >
+          <p style={expandedListItem}>Profile & Settings</p>
+          <p style={expandedListItem}> Sign Out</p>
         </div>
       )}
     </div>
