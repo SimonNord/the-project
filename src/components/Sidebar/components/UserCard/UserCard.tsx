@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 import { User } from "types";
 import { Color } from "../../../../variables";
-import styles from "./styles.module.css";
+import { withTheme } from "styled-components";
+import { ReactComponent as ChevronDown } from "./assets/chevron-down.svg";
 
 type Props = {
   user: User;
@@ -25,6 +26,7 @@ const divStyles = {
 };
 
 const nameStyles = {
+  color: Color.White,
   margin: "0px",
   fontSize: "15px",
   lineHeight: "18px",
@@ -48,10 +50,7 @@ const imageStyles = {
   borderRadius: "3px",
 };
 
-const arrowStyles = {
-  justifySelf: "flex-end",
-  fontSize: "15px",
-};
+const arrowStyles = {};
 
 const expandedList = {
   textAlign: "left",
@@ -72,25 +71,17 @@ const UserCard = (props: Props) => {
   return (
     <div style={container}>
       <div style={divStyles}>
-        <img style={imageStyles} src="avatar-image.png" />
+        <img style={imageStyles} src="./assets/avatar-image.png" alt="" />
         <div style={textDiv}>
           <p style={nameStyles}>{props.user.firstName}!</p>
           <a style={emailStyles} href="#">
             {props.user.email}
           </a>
         </div>
-        <img
-          onClick={() => setShow((show = !show))}
-          style={arrowStyles}
-          src="./chevron-down.svg"
-          alt="toggle menu"
-        />
+        <ChevronDown style={arrowStyles} onClick={() => setShow(!show)} />
       </div>
       {show && (
-        <div
-          style={expandedList}
-          className={show ? styles.collapsedListItem : styles.expandedListItem}
-        >
+        <div style={expandedList}>
           <p style={expandedListItem}>Profile & Settings</p>
           <p style={expandedListItem}> Sign Out</p>
         </div>
@@ -98,8 +89,5 @@ const UserCard = (props: Props) => {
     </div>
   );
 };
-{
-  /* <expandedList show={show}/> */
-}
 
 export default UserCard;
