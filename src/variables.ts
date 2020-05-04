@@ -4,4 +4,5 @@ export enum Color {
   White = "rgb(255,255,255)",
   CodGray = "rgb(18, 18, 18)",
   DodgerBlue = "rgb(67, 124, 255)",
+  GreySeeThru = "hsla(0,0%,100%,.3)",
 }

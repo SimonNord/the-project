@@ -1,20 +1,22 @@
 import React, { ReactNode } from "react";
-import "styled-components/macro";
+import { Color } from "variables";
 
 type Props = {
   children: ReactNode;
 };
 
+// Getting an error when trying to use textTransform property
+const sectionHeadStyles = {
+  fontWeight: 500,
+  // textTransform: '',
+  fontSize: "13px",
+  color: Color.GreySeeThru,
+  letterSpacing: 0,
+  padding: "11px 15px",
+};
+
 const SectionHeadline = ({ children }: Props) => {
-  return (
-    <div
-      css={`
-        // Give me some styles!
-      `}
-    >
-      passed via prop: {children}
-    </div>
-  );
+  return <div style={sectionHeadStyles}>{children}</div>;
 };
 
 export default SectionHeadline;
