@@ -6,8 +6,14 @@ type Props = {
 };
 
 const Content = (props: Props) => {
+  const style = {
+    width: "100%",
+    height: "100%",
+    margin: "auto",
+  };
+
   return (
-    <div className={props.className}>
+    <div className={props.className} style={style}>
       <NoContentPlaceholder />
     </div>
   );
