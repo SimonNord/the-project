@@ -8,7 +8,7 @@ export const Flex_col_container = styled.div`
   padding: 15px;
   border-radius: 3px;
 `;
-export const Flex_row_container = styled.div`
+export const FlexRowContainer = styled.div`
   display: flex;
   background-color: ${Color.LimedSpruce};
   padding: 15px;

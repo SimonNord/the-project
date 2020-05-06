@@ -7,7 +7,7 @@ import avatar from "./assets/avatar-image.png";
 
 /* Import styles */
 import {
-  Flex_row_container,
+  FlexRowContainer,
   Image,
   TextContainer,
   Username,
@@ -26,14 +26,14 @@ const UserCard = (props: Props) => {
 
   return (
     <div>
-      <Flex_row_container>
+      <FlexRowContainer>
         <Image src={avatar} alt="" />
         <TextContainer>
           <Username>{props.user.firstName}</Username>
           <Email>{props.user.email}</Email>
         </TextContainer>
         <ArrowDown onClick={() => setShow(!show)} />
-      </Flex_row_container>
+      </FlexRowContainer>
       {show && (
         <ExpandedList>
           <ExpandedListItem> Profile & Settings </ExpandedListItem>
