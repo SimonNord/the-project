@@ -1,18 +1,18 @@
 import styled from "styled-components/macro";
 import { Color } from "../../../../variables";
+import { ReactComponent as ChevronDown } from "./assets/chevron-down.svg";
 
-export const Container = styled.div`
+export const Flex_col_container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 15px;
-  margin: 0px;
+  border-radius: 3px;
 `;
-export const Div = styled.div`
-  margin: 0px;
+export const Flex_row_container = styled.div`
   display: flex;
-  align-items: space-between;
   background-color: ${Color.LimedSpruce};
   padding: 15px;
+  align-items: center;
 `;
 
 export const Username = styled.p`
@@ -31,11 +31,28 @@ export const Email = styled.a`
 `;
 
 export const TextContainer = styled.div`
-  margin: "10px";
+  margin: 10px;
 `;
 
 export const Image = styled.img`
   width: 50px;
-  height: 50%;
+  height: 50px;
   border-radius: 3px;
+`;
+
+export const ExpandedList = styled.div`
+  text-align: left;
+  padding: 15px;
+`;
+
+export const ExpandedListItem = styled.div`
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: ${Color.CodGray};
+`;
+
+export const ArrowDown = styled(ChevronDown)`
+  margin: 0 10px 0 15px;
+  fill: #6e757d;
 `;
