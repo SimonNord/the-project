@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
 import styled from "styled-components/macro";
-import { Color } from "variables";
 
 type Props = {
   children: ReactNode;
@@ -25,12 +24,8 @@ const Progress = styled.div`
 
 const SideBarItem = (props: Props) => {
   return (
-    <div
-      css={`
-        background-color: ${Color.White};
-      `}
-    >
-      content: {props.children}
+    <div>
+      props.children: {props.children}
       <Progress>Progress</Progress>
     </div>
   );
