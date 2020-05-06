@@ -6,6 +6,7 @@ import avatar from "./assets/avatar-image.png";
 /* Import styles */
 import {
   Background,
+  BackgroundLeft,
   Image,
   TextContainer,
   Username,
@@ -25,11 +26,13 @@ const UserCard = (props: Props) => {
   return (
     <div>
       <Background>
-        <Image src={avatar} alt="" />
-        <TextContainer>
-          <Username>{props.user.firstName}</Username>
-          <Email>{props.user.email}</Email>
-        </TextContainer>
+        <BackgroundLeft>
+          <Image src={avatar} alt="" />
+          <TextContainer>
+            <Username>{props.user.firstName}</Username>
+            <Email>{props.user.email}</Email>
+          </TextContainer>
+        </BackgroundLeft>
         <ArrowDown onClick={() => setShow(!show)} />
       </Background>
       {show && (

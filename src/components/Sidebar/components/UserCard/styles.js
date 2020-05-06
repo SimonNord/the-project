@@ -7,6 +7,11 @@ export const Background = styled.div`
   background-color: ${Color.LimedSpruce};
   padding: 15px;
   align-items: center;
+  justify-content: space-between;
+`;
+
+export const BackgroundLeft = styled.div`
+  display: flex;
 `;
 
 export const Username = styled.p`
