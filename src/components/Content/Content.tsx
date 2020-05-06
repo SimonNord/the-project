@@ -1,21 +1,22 @@
 import React from "react";
+import styled from "styled-components/macro";
 import NoContentPlaceholder from "./components/NoContentPlaceholder/NoContentPlaceholder";
 
 type Props = {
   className?: string;
 };
 
-const Content = (props: Props) => {
-  const style = {
-    width: "100%",
-    height: "100%",
-    margin: "auto",
-  };
+const FullHeightAndWidth = styled.div`
+  width: 100%;
+  height: 100%;
+  margin: auto;
+`;
 
+const Content = (props: Props) => {
   return (
-    <div className={props.className} style={style}>
+    <FullHeightAndWidth className={props.className}>
       <NoContentPlaceholder />
-    </div>
+    </FullHeightAndWidth>
   );
 };
 
