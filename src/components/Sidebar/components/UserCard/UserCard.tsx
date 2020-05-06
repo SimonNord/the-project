@@ -25,7 +25,7 @@ const UserCard = (props: Props) => {
 
   return (
     <div>
-      <Background>
+      <Background onClick={() => setShow(!show)}>
         <BackgroundLeft>
           <Image src={avatar} alt="" />
           <TextContainer>
@@ -33,7 +33,7 @@ const UserCard = (props: Props) => {
             <Email>{props.user.email}</Email>
           </TextContainer>
         </BackgroundLeft>
-        <ArrowDown onClick={() => setShow(!show)} />
+        <ArrowDown />
       </Background>
       {show && (
         <ExpandedList>
