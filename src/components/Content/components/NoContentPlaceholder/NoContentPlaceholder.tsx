@@ -1,45 +1,45 @@
 import React from "react";
+import styled from "styled-components/macro";
 
 import { Color } from "variables";
 import no_content_placeholder_image from "./images/no_content_placeholder_image.png";
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Image = styled.img`
+  width: 250px;
+`;
+
+const Title = styled.p`
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 29px;
+  color: rgb(18, 18, 18);
+`;
+
+const Subtitle = styled.p`
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  color: ${Color.CodGray};
+`;
+
 const NoContentPlaceholder = () => {
-  const containerStyle = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  } as React.CSSProperties;
-
-  const titleStyle = {
-    fontSize: "22px",
-    fontWeight: 600,
-    lineHeight: "29px",
-    color: "rgba(18, 18, 18)",
-  };
-
-  const subtitleStyle = {
-    fontSize: "17px",
-    fontWeight: 400,
-    lineHeight: "24px",
-    color: Color.CodGray,
-  };
-
-  const imageStyle = {
-    width: 250,
-  };
-
   return (
-    <div style={containerStyle}>
-      <img
-        style={imageStyle}
+    <Container>
+      <Image
         src={no_content_placeholder_image}
         alt="No content placeholder image"
       />
-      <p style={titleStyle}>The Start of a Better You!</p>
-      <p style={subtitleStyle}>
+      <Title>The Start of a Better You!</Title>
+      <Subtitle>
         Habits are like dominos. As one is formed, all others will follow!
-      </p>
-    </div>
+      </Subtitle>
+    </Container>
   );
 };
 
