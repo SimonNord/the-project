@@ -6,7 +6,6 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 15px;
   margin: 0px;
-  width: 200px;
 `;
 export const Div = styled.div`
   margin: 0px;
@@ -14,7 +13,6 @@ export const Div = styled.div`
   align-items: space-between;
   background-color: ${Color.LimedSpruce};
   padding: 15px;
-  width: 200px;
 `;
 
 export const Username = styled.p`
