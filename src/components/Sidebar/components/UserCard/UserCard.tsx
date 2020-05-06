@@ -37,8 +37,8 @@ const UserCard = (props: Props) => {
       </Background>
       {show && (
         <ExpandedList>
-          <ExpandedListItem> Profile & Settings </ExpandedListItem>
-          <ExpandedListItem> Sign Out </ExpandedListItem>
+          <ExpandedListItem href="#">Profile & Settings</ExpandedListItem>
+          <ExpandedListItem href="#">Sign Out</ExpandedListItem>
         </ExpandedList>
       )}
     </div>

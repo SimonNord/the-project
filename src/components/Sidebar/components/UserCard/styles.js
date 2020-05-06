@@ -8,6 +8,7 @@ export const Background = styled.div`
   padding: 15px;
   align-items: center;
   justify-content: space-between;
+  border-radius: 3px 3px 0 0;
 `;
 
 export const BackgroundLeft = styled.div`
@@ -42,9 +43,13 @@ export const Image = styled.img`
 export const ExpandedList = styled.div`
   text-align: left;
   padding: 15px;
+  background-color: white;
+  border-radius: 3px;
 `;
 
-export const ExpandedListItem = styled.div`
+export const ExpandedListItem = styled.a`
+  display: block;
+  text-decoration: none;
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
