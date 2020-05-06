@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import "styled-components/macro";
+import { Color } from "variables";
 
 type Props = {
   children: ReactNode;
@@ -8,11 +8,16 @@ type Props = {
 const SectionHeadline = ({ children }: Props) => {
   return (
     <div
-      css={`
-        // Give me some styles!
-      `}
+      style={{
+        fontWeight: 500,
+        // textTransform: 'uppercase',
+        fontSize: "13px",
+        color: Color.GreySeeThru,
+        letterSpacing: 0,
+        padding: "11px 15px",
+      }}
     >
-      passed via prop: {children}
+      {children}
     </div>
   );
 };
