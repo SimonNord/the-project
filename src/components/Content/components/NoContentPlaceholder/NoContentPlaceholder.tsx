@@ -2,12 +2,15 @@ import React from "react";
 import styled from "styled-components/macro";
 
 import { Color } from "variables";
-import no_content_placeholder_image from "./images/no_content_placeholder_image.png";
+import no_content_placeholder_image from "./assets/no_content_placeholder_image.png";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
 `;
 
 const Image = styled.img`
