@@ -25,7 +25,7 @@ export const Email = styled.a`
 `;
 
 export const TextContainer = styled.div`
-  margin: 10px;
+  margin-left: 15px;
 `;
 
 export const Image = styled.img`

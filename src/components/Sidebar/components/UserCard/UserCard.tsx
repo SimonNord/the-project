@@ -5,7 +5,7 @@ import avatar from "./assets/avatar-image.png";
 
 /* Import styles */
 import {
-  FlexRowContainer,
+  Background,
   Image,
   TextContainer,
   Username,
