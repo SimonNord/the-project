@@ -1,25 +1,22 @@
 import React, { ReactNode } from "react";
+import styled from "styled-components/macro";
 import { Color } from "variables";
 
 type Props = {
   children: ReactNode;
 };
 
+const StyledSectionHeadline = styled.div`
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: ${Color.GreySeeThru};
+  letter-spacing: 0;
+  padding: 11px 15px;
+`;
+
 const SectionHeadline = ({ children }: Props) => {
-  return (
-    <div
-      style={{
-        fontWeight: 500,
-        // textTransform: 'uppercase',
-        fontSize: "13px",
-        color: Color.GreySeeThru,
-        letterSpacing: 0,
-        padding: "11px 15px",
-      }}
-    >
-      {children}
-    </div>
-  );
+  return <StyledSectionHeadline>{children}</StyledSectionHeadline>;
 };
 
 export default SectionHeadline;
