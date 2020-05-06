@@ -7,3 +7,7 @@ it("should render the main text", () => {
   const mainText = getByText("The Start of a Better You!");
   expect(mainText).toBeInTheDocument();
 });
+
+it("should render the motivational text");
+
+it("should render the image");
