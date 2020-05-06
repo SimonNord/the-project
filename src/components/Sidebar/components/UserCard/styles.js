@@ -2,13 +2,7 @@ import styled from "styled-components/macro";
 import { Color } from "../../../../variables";
 import { ReactComponent as ChevronDown } from "./assets/chevron-down.svg";
 
-export const Flex_col_container = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  border-radius: 3px;
-`;
-export const FlexRowContainer = styled.div`
+export const Background = styled.div`
   display: flex;
   background-color: ${Color.LimedSpruce};
   padding: 15px;
@@ -54,5 +48,5 @@ export const ExpandedListItem = styled.div`
 
 export const ArrowDown = styled(ChevronDown)`
   margin: 0 10px 0 15px;
-  fill: #6e757d;
+  fill: ${Color.White};
 `;

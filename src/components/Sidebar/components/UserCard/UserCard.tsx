@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import styled from "styled-components/macro";
 
 import { User } from "types";
-
 import avatar from "./assets/avatar-image.png";
 
 /* Import styles */
@@ -26,14 +24,14 @@ const UserCard = (props: Props) => {
 
   return (
     <div>
-      <FlexRowContainer>
+      <Background>
         <Image src={avatar} alt="" />
         <TextContainer>
           <Username>{props.user.firstName}</Username>
           <Email>{props.user.email}</Email>
         </TextContainer>
         <ArrowDown onClick={() => setShow(!show)} />
-      </FlexRowContainer>
+      </Background>
       {show && (
         <ExpandedList>
           <ExpandedListItem> Profile & Settings </ExpandedListItem>
