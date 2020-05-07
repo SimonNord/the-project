@@ -9,7 +9,8 @@ export default {
 const user = {
   firstName: "John",
   lastName: "Doe",
-  email: "john@doe.com",
+  email:
+    "john@doeasdasdsadsasdasddasdasdadsasdasdasdasdasdasdasasdasdadadsddas.com",
 };
 
 export const UserCardStory = () => (
