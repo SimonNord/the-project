@@ -11,7 +11,8 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/1329332?v=4",
       "profile": "https://github.com/mchiesa",
       "contributions": [
-        "code"
+        "code",
+        "test"
       ]
     },
     {
@@ -19,6 +20,24 @@
       "name": "limbovski",
       "avatar_url": "https://avatars2.githubusercontent.com/u/6280897?v=4",
       "profile": "https://github.com/limbovski",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ruaridhm",
+      "name": "ruaridhm",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/25019818?v=4",
+      "profile": "https://github.com/ruaridhm",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "SimonNord",
+      "name": "Simon Nordström",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/53083229?v=4",
+      "profile": "http://www.nordsites.se",
       "contributions": [
         "code"
       ]

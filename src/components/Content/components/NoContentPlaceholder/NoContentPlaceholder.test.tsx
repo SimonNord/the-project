@@ -8,6 +8,17 @@ it("should render the main text", () => {
   expect(mainText).toBeInTheDocument();
 });
 
-it.todo("should render the motivational text");
+it("should render the motivational text", () => {
+  const { getByText } = render(<NoContentPlaceholder />);
+  const motivationalText = getByText(
+    "Habits are like dominos. As one is formed, all others will follow!"
+  );
+  expect(motivationalText).toBeInTheDocument();
+});
 
-it.todo("should render the image");
+it("should render the image", () => {
+  const { getByAltText } = render(<NoContentPlaceholder />);
+  const altText = getByAltText("No content placeholder image");
+
+  expect(altText).toBeInTheDocument();
+});
