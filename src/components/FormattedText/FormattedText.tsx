@@ -1,13 +1,22 @@
 import React, { ReactNode } from "react";
 import { Color } from "variables";
+import styled from "styled-components/macro";
 
 type Props = {
   children: ReactNode;
   color: Color;
 };
 
+const StyledFormattedText = styled.span`
+  color: ${(props) => props.color};
+`;
+
 const FormattedText = (props: Props) => {
-  return <span>{props.children}</span>;
+  return (
+    <StyledFormattedText color={props.color}>
+      {props.children}
+    </StyledFormattedText>
+  );
 };
 
 FormattedText.defaultProps = {
