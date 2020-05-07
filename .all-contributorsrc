@@ -22,6 +22,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "SimonNord",
+      "name": "Simon Nordström",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/53083229?v=4",
+      "profile": "http://www.nordsites.se",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
