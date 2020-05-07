@@ -11,8 +11,9 @@ export const Background = styled.div`
   border-radius: 3px;
 `;
 
-export const BackgroundLeft = styled.div`
+export const LeftContent = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 export const Username = styled.p`

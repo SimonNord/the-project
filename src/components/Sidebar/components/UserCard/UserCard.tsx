@@ -6,7 +6,7 @@ import avatar from "./assets/avatar-image.png";
 /* Import styles */
 import {
   Background,
-  BackgroundLeft,
+  LeftContent,
   Image,
   TextContainer,
   Username,
@@ -26,17 +26,17 @@ const UserCard = (props: Props) => {
   return (
     <div>
       <Background onClick={() => setShow(!show)}>
-        <BackgroundLeft>
+        <LeftContent>
           <Image src={avatar} alt="" />
           <TextContainer>
             <Username>{props.user.firstName}</Username>
-            <Email>
+            <Email title={props.user.email}>
               {props.user.email.length > 20
                 ? props.user.email.slice(0, 20) + "..."
                 : props.user.email}
             </Email>
           </TextContainer>
-        </BackgroundLeft>
+        </LeftContent>
         <ArrowDown />
       </Background>
       {show && (
