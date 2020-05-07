@@ -1,0 +1,52 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "mchiesa",
+      "name": "Maximiliano Chiesa",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1329332?v=4",
+      "profile": "https://github.com/mchiesa",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "limbovski",
+      "name": "limbovski",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6280897?v=4",
+      "profile": "https://github.com/limbovski",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ruaridhm",
+      "name": "ruaridhm",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/25019818?v=4",
+      "profile": "https://github.com/ruaridhm",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "SimonNord",
+      "name": "Simon Nordström",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/53083229?v=4",
+      "profile": "http://www.nordsites.se",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "the-project",
+  "projectOwner": "HandsOnLearning",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
+
