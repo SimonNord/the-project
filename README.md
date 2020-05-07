@@ -16,6 +16,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/mchiesa"><img src="https://avatars2.githubusercontent.com/u/1329332?v=4" width="100px;" alt=""/><br /><sub><b>Maximiliano Chiesa</b></sub></a><br /><a href="https://github.com/HandsOnLearning/the-project/commits?author=mchiesa" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/limbovski"><img src="https://avatars2.githubusercontent.com/u/6280897?v=4" width="100px;" alt=""/><br /><sub><b>limbovski</b></sub></a><br /><a href="https://github.com/HandsOnLearning/the-project/commits?author=limbovski" title="Code">💻</a></td>
     <td align="center"><a href="http://www.nordsites.se"><img src="https://avatars1.githubusercontent.com/u/53083229?v=4" width="100px;" alt=""/><br /><sub><b>Simon Nordström</b></sub></a><br /><a href="https://github.com/HandsOnLearning/the-project/commits?author=SimonNord" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ruaridhm"><img src="https://avatars2.githubusercontent.com/u/25019818?v=4" width="100px;" alt=""/><br /><sub><b>ruaridhm</b></sub></a><br /><a href="https://github.com/HandsOnLearning/the-project/commits?author=ruaridhm" title="Code">💻</a></td>
   </tr>
 </table>
 
