@@ -13,6 +13,7 @@ const Button = (props: Props) => {
         background-color: ${Color.LimedSpruce};
         border-radius: 3px;
         padding: 12px 15px 12px 15px;
+        border: 0px;
       `}
     >
       {props.children}
