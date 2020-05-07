@@ -8,7 +8,7 @@ export default {
 
 export const ButtonStory = () => (
   <Button>
-    <text
+    <span
       css={`
         font-weight: 500;
         font-size: 15px;
@@ -17,7 +17,7 @@ export const ButtonStory = () => (
       `}
     >
       Add New...
-    </text>
+    </span>
   </Button>
 );
 
