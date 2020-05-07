@@ -8,7 +8,7 @@ export const Background = styled.div`
   padding: 15px;
   align-items: center;
   justify-content: space-between;
-  border-radius: 3px 3px 0 0;
+  border-radius: 3px;
 `;
 
 export const BackgroundLeft = styled.div`
@@ -41,6 +41,7 @@ export const Image = styled.img`
 `;
 
 export const ExpandedList = styled.div`
+  margin-top: 3px;
   text-align: left;
   padding: 15px;
   background-color: white;
@@ -48,6 +49,7 @@ export const ExpandedList = styled.div`
 `;
 
 export const ExpandedListItem = styled.a`
+  padding: 6px;
   display: block;
   text-decoration: none;
   font-size: 15px;
