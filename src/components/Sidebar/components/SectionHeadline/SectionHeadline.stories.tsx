@@ -17,8 +17,9 @@ const colors = [
 export const SectionHeadlineStory = () => (
   <div>
     This is the component on four different backgrounds.
-    {colors.map((color) => (
+    {colors.map((color, index) => (
       <div
+        key={index}
         css={`
           margin-top: 5px;
           height: 40px;

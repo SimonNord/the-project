@@ -8,7 +8,7 @@ export default {
 
 export const SideBarItemStory = () => (
   <SideBarItem>
-    <text
+    <spam
       css={`
         font-weight: 500;
         font-size: 15px;
@@ -17,7 +17,7 @@ export const SideBarItemStory = () => (
       `}
     >
       Progress
-    </text>
+    </spam>
   </SideBarItem>
 );
 
