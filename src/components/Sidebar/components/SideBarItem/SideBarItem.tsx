@@ -5,7 +5,7 @@ type Props = {
   children: ReactNode;
 };
 
-const Progress = styled.div`
+const StyledSideBoardItem = styled.div`
   background-color: #24292e;
   color: white;
   display: table-cell;
@@ -26,7 +26,9 @@ const SideBarItem = (props: Props) => {
   return (
     <div>
       props.children: {props.children}
-      <Progress>Progress</Progress>
+      <StyledSideBoardItem>Progress</StyledSideBoardItem>
+      <StyledSideBoardItem>Progress</StyledSideBoardItem>
+      <StyledSideBoardItem>Progress</StyledSideBoardItem>
     </div>
   );
 };
