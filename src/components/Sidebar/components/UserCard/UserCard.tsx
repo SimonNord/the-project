@@ -30,11 +30,7 @@ const UserCard = (props: Props) => {
           <Image src={avatar} alt="" />
           <TextContainer>
             <Username>{props.user.firstName}</Username>
-            <Email title={props.user.email}>
-              {props.user.email.length > 20
-                ? props.user.email.slice(0, 20) + "..."
-                : props.user.email}
-            </Email>
+            <Email title={props.user.email}>{props.user.email}</Email>
           </TextContainer>
         </LeftContent>
         <ArrowDown />
