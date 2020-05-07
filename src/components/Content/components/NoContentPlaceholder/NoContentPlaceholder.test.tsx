@@ -8,6 +8,6 @@ it("should render the main text", () => {
   expect(mainText).toBeInTheDocument();
 });
 
-it("should render the motivational text");
+it.todo("should render the motivational text");
 
-it("should render the image");
+it.todo("should render the image");
