@@ -4,6 +4,7 @@ import { Color } from "variables";
 import { User } from "types";
 import styled from "styled-components/macro";
 import Button from "components/Button/Button";
+import UserCard from "./components/UserCard/UserCard";
 
 type Props = {
   className?: string;
@@ -17,7 +18,7 @@ const Background = styled.div`
 const SideBar = (props: Props) => {
   return (
     <Background className={props.className}>
-      <div>Top part</div>
+      <UserCard user={props.user} />
       <div>Bottom part</div>
     </Background>
   );
