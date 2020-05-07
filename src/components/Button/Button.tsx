@@ -8,7 +8,7 @@ type Props = {
 
 const Button = (props: Props) => {
   return (
-    <div
+    <button
       css={`
         background-color: ${Color.LimedSpruce};
         border-radius: 3px;
@@ -16,7 +16,7 @@ const Button = (props: Props) => {
       `}
     >
       {props.children}
-    </div>
+    </button>
   );
 };
 
