@@ -1,6 +1,5 @@
 import React from "react";
 import FormattedText from "./FormattedText";
-import "styled-components/macro";
 import { Color } from "variables";
 import styled from "styled-components/macro";
 
