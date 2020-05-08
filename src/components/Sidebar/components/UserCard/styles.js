@@ -53,6 +53,10 @@ export const ExpandedList = styled.div`
   padding: 15px;
   background-color: white;
   border-radius: 3px;
+
+  position: absolute;
+  right: 0;
+  left: 0;
 `;
 
 export const ExpandedListItem = styled.a`
