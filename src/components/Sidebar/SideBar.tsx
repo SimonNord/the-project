@@ -25,23 +25,15 @@ const Plus = styled(plus)`
 const SideBar = (props: Props) => {
   return (
     <Background className={props.className}>
+      <div>Top part</div>
       <div
         css={`
-          flex-grow: 1;
-        `}
-      >
-        Top part
-      </div>
-      <div
-        css={`
-          margin-bottom: 15px;
-          margin-left: 10px;
-          color: white;
+          margin: auto auto 15px 10px;
         `}
       >
         <Button>
           <Plus />
-          Add New...
+          <span css={{ color: Color.White }}>Add New...</span>
         </Button>
       </div>
     </Background>
