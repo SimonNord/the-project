@@ -32,8 +32,10 @@ const SideBar = (props: Props) => {
         `}
       >
         <Button>
-          <Plus />
-          <span css={{ color: Color.White }}>Add New...</span>
+          <div css={{ display: "flex", alignItems: "center" }}>
+            <Plus />
+            <span css={{ color: Color.White }}>Add New...</span>
+          </div>
         </Button>
       </div>
     </Background>
