@@ -42,8 +42,8 @@ export const TextContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   border-radius: 3px;
 `;
 
