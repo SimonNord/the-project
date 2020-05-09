@@ -13,7 +13,6 @@ export const Background = styled.div`
 
 export const LeftContent = styled.div`
   display: flex;
-  align-items: center;
   overflow: hidden;
 `;
 
@@ -37,6 +36,9 @@ export const Email = styled.div`
 `;
 
 export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: 15px;
   overflow: hidden;
 `;
