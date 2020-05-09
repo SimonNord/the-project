@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "styled-components/macro";
 import { User } from "types";
 import avatar from "./assets/avatar-image.png";
 
@@ -24,7 +24,7 @@ const UserCard = (props: Props) => {
   let [show, setShow] = useState(false);
 
   return (
-    <div>
+    <div css={{ position: "relative" }}>
       <Background onClick={() => setShow(!show)}>
         <LeftContent>
           <Image src={avatar} alt="" />
