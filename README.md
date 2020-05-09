@@ -1,5 +1,5 @@
 # The Project
-A project to learn React and software engineering by building a big application in collaboration.
+A project to learn React and software engineering by building an application in collaboration.
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
