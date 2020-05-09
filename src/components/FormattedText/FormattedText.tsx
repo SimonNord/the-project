@@ -8,6 +8,8 @@ type Props = {
 };
 
 const StyledFormattedText = styled.span`
+  font-size: 15px;
+  font-weight: 500;
   color: ${(props) => props.color};
 `;
 
