@@ -3,7 +3,6 @@ import "styled-components/macro";
 import { Color } from "variables";
 import { User } from "types";
 import styled from "styled-components/macro";
-import Button from "components/Button/Button";
 import UserCard from "./components/UserCard/UserCard";
 
 type Props = {
