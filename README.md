@@ -1,3 +1,6 @@
+
+![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg "Logo Title Text 1")
+
 # The Project
 A project to learn React and software engineering by building an application in collaboration.
 
