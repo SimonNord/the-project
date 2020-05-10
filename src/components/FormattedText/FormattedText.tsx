@@ -13,7 +13,7 @@ const FormattedText = (props: Props) => {
     <span
       css={`
         font-size: 15px;
-        fontweight: ${fontWeights[props.weight]};
+        font-weight: ${fontWeights[props.weight]};
         color: ${props.color};
       `}
     >
