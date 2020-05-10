@@ -13,7 +13,6 @@ export const Background = styled.div`
 
 export const LeftContent = styled.div`
   display: flex;
-  align-items: center;
   overflow: hidden;
 `;
 
@@ -37,13 +36,16 @@ export const Email = styled.div`
 `;
 
 export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: 15px;
   overflow: hidden;
 `;
 
 export const Image = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   border-radius: 3px;
 `;
 
