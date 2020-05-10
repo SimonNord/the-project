@@ -4,6 +4,7 @@ import { Color } from "variables";
 import { User } from "types";
 import styled from "styled-components/macro";
 import Button from "components/Button/Button";
+import UserCard from "./components/UserCard/UserCard";
 import { ReactComponent as plus } from "components/Sidebar/assets/plus.svg";
 
 type Props = {
@@ -17,6 +18,14 @@ const Background = styled.div`
   flex-flow: column nowrap;
 `;
 
+const TopPart = styled.div`
+  padding: 13px 10px;
+`;
+
+const BottomPart = styled.div`
+  margin: auto auto 15px 10px;
+`;
+
 const Plus = styled(plus)`
   fill: ${Color.White};
   margin-right: 5px;
@@ -25,19 +34,16 @@ const Plus = styled(plus)`
 const SideBar = (props: Props) => {
   return (
     <Background className={props.className}>
-      <div>Top part</div>
-      <div
-        css={`
-          margin: auto auto 15px 10px;
-        `}
-      >
+      <TopPart>
+        <UserCard user={props.user} />
+      </TopPart>
+
+      <BottomPart>
         <Button>
-          <div css={{ display: "flex", alignItems: "center" }}>
-            <Plus />
-            <span css={{ color: Color.White }}>Add New...</span>
-          </div>
+          <Plus />
+          <span css={{ color: Color.White }}>Add New...</span>
         </Button>
-      </div>
+      </BottomPart>
     </Background>
   );
 };

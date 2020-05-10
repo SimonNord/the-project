@@ -16,6 +16,8 @@ const Button = (props: Props) => {
         border: 0px;
         color: #fff;
         font-size: 15px;
+        display: flex;
+        align-items: center;
       `}
     >
       {props.children}
