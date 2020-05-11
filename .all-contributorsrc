@@ -11,7 +11,8 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/1329332?v=4",
       "profile": "https://github.com/mchiesa",
       "contributions": [
-        "code"
+        "code",
+        "test"
       ]
     },
     {
@@ -38,7 +39,8 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/53083229?v=4",
       "profile": "http://www.nordsites.se",
       "contributions": [
-        "code"
+        "code",
+        "test"
       ]
     }
   ],
@@ -49,4 +51,3 @@
   "repoHost": "https://github.com",
   "skipCi": true
 }
-

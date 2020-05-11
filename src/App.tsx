@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 import SideBar from "./components/Sidebar/SideBar";
 import Content from "./components/Content/Content";
 import GlobalStyle from "./GlobalStyle";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -18,16 +19,19 @@ const HARDCODED_USER = {
 function App() {
   return (
     <>
-      <Container>
-        <SideBar
-          css={`
-            width: 270px;
-            height: 100vh;
-          `}
-          user={HARDCODED_USER}
-        />
-        <Content />
-      </Container>
+      <Router>
+        <Container>
+          <SideBar
+            css={`
+              flex: 0 0 270px;
+              height: 100vh;
+              min-width: 0;
+            `}
+            user={HARDCODED_USER}
+          />
+          <Content />
+        </Container>
+      </Router>
       <GlobalStyle />
     </>
   );
