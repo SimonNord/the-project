@@ -6,12 +6,15 @@ type Props = {
   children: ReactNode;
 };
 
+// Defines the component plus it's css
 const StyledExpandedList = styled.div`
   position: absolute;
+  left: 0;
+  right: 0;
   margin: 3px 0;
   padding: 4px 0;
   border-radius: 3px;
-  background-color: ${(props) => props.fullwidth && "red"};
+  background-color: ${Color.White};
   text-align: left;
 
   a {
