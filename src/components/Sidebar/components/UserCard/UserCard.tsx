@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "styled-components/macro";
 import { User } from "types";
 import avatar from "./assets/avatar-image.png";
+import ExpandedList from "../ExpandedList/ExpandedList";
 
 /* Import styles */
 import {
@@ -11,8 +12,6 @@ import {
   TextContainer,
   Username,
   Email,
-  ExpandedList,
-  ExpandedListItem,
   ArrowDown,
 } from "./styles";
 
@@ -37,8 +36,8 @@ const UserCard = (props: Props) => {
       </Background>
       {show && (
         <ExpandedList>
-          <ExpandedListItem href="#">Profile & Settings</ExpandedListItem>
-          <ExpandedListItem href="#">Sign Out</ExpandedListItem>
+          <a href="#">Profile &amp; Settings</a>
+          <a href="#">Sign Out</a>
         </ExpandedList>
       )}
     </div>

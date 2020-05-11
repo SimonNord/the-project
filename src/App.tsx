@@ -12,7 +12,7 @@ const Container = styled.div`
 const HARDCODED_USER = {
   firstName: "John",
   lastName: "Doe",
-  email: "john@doe.com",
+  email: "john@doedoedoedoedoedoe.com",
 };
 
 function App() {
