@@ -11,7 +11,7 @@ const StyledExpandedList = styled.div`
   margin: 3px 0;
   padding: 4px 0;
   border-radius: 3px;
-  background-color: white;
+  background-color: ${(props) => props.fullwidth && "red"};
   text-align: left;
 
   a {
