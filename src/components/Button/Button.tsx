@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react";
 import "styled-components/macro";
-import styled from "styled-components/macro";
+/* import styled from "styled-components/macro"; */
 import { Color } from "variables";
-import { Background } from "components/Sidebar/components/UserCard/styles";
+/* import { Background } from "components/Sidebar/components/UserCard/styles"; */
 
 type Props = {
   children: ReactNode;
