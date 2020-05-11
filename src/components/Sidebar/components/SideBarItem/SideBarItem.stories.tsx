@@ -13,7 +13,6 @@ export const SideBarItemStory = () => (
         css={`
           font-weight: 500;
           font-size: 15px;
-          color: black;
           line-height: 18px;
         `}
       >
@@ -26,7 +25,6 @@ export const SideBarItemStory = () => (
         css={`
           font-weight: 500;
           font-size: 15px;
-          color: black;
           line-height: 18px;
         `}
       >
@@ -39,7 +37,7 @@ export const SideBarItemStory = () => (
         css={`
           font-weight: 500;
           font-size: 15px;
-          color: black;
+
           line-height: 18px;
         `}
       >
