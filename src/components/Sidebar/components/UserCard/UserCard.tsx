@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "styled-components/macro";
 import { User } from "types";
 import avatar from "./assets/avatar-image.png";
 
@@ -24,17 +24,13 @@ const UserCard = (props: Props) => {
   let [show, setShow] = useState(false);
 
   return (
-    <div>
+    <div css={{ position: "relative" }}>
       <Background onClick={() => setShow(!show)}>
         <LeftContent>
           <Image src={avatar} alt="" />
           <TextContainer>
             <Username>{props.user.firstName}</Username>
-            <Email title={props.user.email}>
-              {props.user.email.length > 20
-                ? props.user.email.slice(0, 20) + "..."
-                : props.user.email}
-            </Email>
+            <Email title={props.user.email}>{props.user.email}</Email>
           </TextContainer>
         </LeftContent>
         <ArrowDown />
