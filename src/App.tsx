@@ -23,6 +23,7 @@ function App() {
           css={`
             flex: 0 0 270px;
             height: 100vh;
+            min-width: 0;
           `}
           user={HARDCODED_USER}
         />
