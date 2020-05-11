@@ -1,6 +1,6 @@
 export enum Color {
   Black = "rgb(0,0,0)",
-  Cinder = "rgb(33, 37, 41)",
+  Cinder = "rgb(36, 47, 60)",
   LimedSpruce = "rgb(57, 67, 78)",
   White = "rgb(255,255,255)",
   CodGray = "rgb(18, 18, 18)",
