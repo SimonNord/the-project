@@ -21,7 +21,7 @@ function App() {
       <Container>
         <SideBar
           css={`
-            width: 270px;
+            flex: 0 0 270px;
             height: 100vh;
           `}
           user={HARDCODED_USER}

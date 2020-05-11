@@ -13,7 +13,7 @@ export const Background = styled.div`
 
 export const LeftContent = styled.div`
   display: flex;
-  align-items: center;
+  overflow: hidden;
 `;
 
 export const Username = styled.p`
@@ -24,20 +24,28 @@ export const Username = styled.p`
   font-weight: 600;
 `;
 
-export const Email = styled.a`
+export const Email = styled.div`
   font-size: 13px;
   line-height: 18px;
   font-weight: 500;
   color: hsla(0, 0%, 100%, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 `;
 
 export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: 15px;
+  overflow: hidden;
 `;
 
 export const Image = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   border-radius: 3px;
 `;
 
@@ -47,6 +55,10 @@ export const ExpandedList = styled.div`
   padding: 15px;
   background-color: white;
   border-radius: 3px;
+
+  position: absolute;
+  right: 0;
+  left: 0;
 `;
 
 export const ExpandedListItem = styled.a`
