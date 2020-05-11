@@ -1,22 +1,15 @@
 import React, { ReactNode } from "react";
 import "styled-components/macro";
-/* import styled from "styled-components/macro"; */
 import { Color } from "variables";
-/* import { Background } from "components/Sidebar/components/UserCard/styles"; */
 
 type Props = {
   children: ReactNode;
-  type?: "primary" | void | undefined;
+  type?: "primary" | void;
 };
 
 const Button = (props: Props) => {
-  let backgroundColor: string = "";
-
-  if (props.type === "primary") {
-    backgroundColor = Color.DodgerBlue;
-  } else {
-    backgroundColor = Color.LimedSpruce;
-  }
+  const backgroundColor =
+    props.type === "primary" ? Color.DodgerBlue : Color.LimedSpruce;
 
   return (
     <button
