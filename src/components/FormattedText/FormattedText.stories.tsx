@@ -1,7 +1,7 @@
 import React from "react";
 import FormattedText from "./FormattedText";
-import "styled-components/macro";
 import { Color } from "variables";
+
 import styled from "styled-components/macro";
 
 export default {
@@ -19,11 +19,15 @@ const Seperator = styled.div({
 
 export const FormattedTextStory = () => (
   <div>
-    <FormattedText>I should be black</FormattedText>
+    <FormattedText weight="regular">I should be black</FormattedText>
     <Seperator />
-    <FormattedText color={Color.DodgerBlue}>I should be blue</FormattedText>
+    <FormattedText weight="medium" color={Color.DodgerBlue}>
+      I should be blue
+    </FormattedText>
     <Seperator />
-    <FormattedText color={Color.White}>I should be white</FormattedText>
+    <FormattedText weight="bold" color={Color.White}>
+      I should be white
+    </FormattedText>
   </div>
 );
 
