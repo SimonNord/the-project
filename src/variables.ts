@@ -10,6 +10,6 @@ export enum Color {
 
 export const fontWeights = {
   regular: 400,
-  medium: 500,
-  bold: 600,
+  medium: 600,
+  bold: 700,
 };
