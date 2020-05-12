@@ -23,7 +23,7 @@ export const FormattedTextStory = () => (
       I should be black with a font-size of 15px
     </FormattedText>
     <Seperator />
-    <FormattedText size="1" color={Color.DodgerBlue}>
+    <FormattedText weight="medium" size="1" color={Color.DodgerBlue}>
       I should be blue with a font-size of 15px
     </FormattedText>
     <Seperator />
