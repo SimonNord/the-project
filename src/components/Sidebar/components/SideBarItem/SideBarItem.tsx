@@ -11,15 +11,15 @@ const SideBarItem = (props: Props) => {
     <div
       css={`
         background-color: ${Color.Cinder};
-        color: white;
-        display: table-cell;
+        color: ${Color.White};
+        display: block;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
-        line-height: 21px;
         height: 25px;
-        width: 200px;
+        line-height: 25px;
         padding: 11px 15px;
-        vertical-align: middle;
+        transition: color .2s ease-in-out,background-color .2s ease-in-out;
+        width: 200px;
 
         &:hover {
           background-color: ${Color.DodgerBlue};
