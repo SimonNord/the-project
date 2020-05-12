@@ -42,7 +42,8 @@
     "lint": "eslint --ext .js --ext .tsx --max-warnings 0 src/",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "typecheck": "tsc --noEmit -p tsconfig.json"
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test:coverage": "npm t -- --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
