@@ -19,14 +19,16 @@ const Seperator = styled.div({
 
 export const FormattedTextStory = () => (
   <div>
-    <FormattedText weight="regular">I should be black</FormattedText>
-    <Seperator />
-    <FormattedText weight="medium" color={Color.DodgerBlue}>
-      I should be blue
+    <FormattedText weight="regular">
+      I should be black with a font-size of 15px
     </FormattedText>
     <Seperator />
-    <FormattedText weight="bold" color={Color.White}>
-      I should be white
+    <FormattedText size="1" color={Color.DodgerBlue}>
+      I should be blue with a font-size of 15px
+    </FormattedText>
+    <Seperator />
+    <FormattedText size="2" weight="bold" color={Color.White}>
+      I should be white with a font-size of 17px
     </FormattedText>
   </div>
 );
