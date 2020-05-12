@@ -1,5 +1,7 @@
 
-![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg "Logo Title Text 1")
+
+
+[![codecov](https://codecov.io/gh/HandsOnLearning/the-project/branch/master/graph/badge.svg)](https://codecov.io/gh/HandsOnLearning/the-project) ![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg "Logo Title Text 1") 
 
 # The Project
 A project to learn React and software engineering by building an application in collaboration.
