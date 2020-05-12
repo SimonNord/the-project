@@ -24,3 +24,11 @@ export const ButtonStory = () => (
 ButtonStory.story = {
   name: "default",
 };
+
+export const PrimaryButtonStory = () => (
+  <Button type="primary">Primary Button</Button>
+);
+
+PrimaryButtonStory.story = {
+  name: "Primary",
+};
