@@ -1,14 +1,15 @@
-
-
-
 [![codecov](https://codecov.io/gh/HandsOnLearning/the-project/branch/master/graph/badge.svg)](https://codecov.io/gh/HandsOnLearning/the-project) ![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg "Logo Title Text 1") 
 
 # The Project
+
 A project to learn React and software engineering by building an application in collaboration.
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -27,6 +28,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

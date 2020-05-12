@@ -7,18 +7,44 @@ export default {
 };
 
 export const SideBarItemStory = () => (
-  <SideBarItem>
-    <span
-      css={`
-        font-weight: 500;
-        font-size: 15px;
-        color: #fff;
-        line-height: 18px;
-      `}
-    >
-      Progress
-    </span>
-  </SideBarItem>
+  <div>
+    <SideBarItem>
+      <span
+        css={`
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+        `}
+      >
+        Progress
+      </span>
+    </SideBarItem>
+    <div css="padding-top: 64px;" />
+    <SideBarItem>
+      <span
+        css={`
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+        `}
+      >
+        Info
+      </span>
+    </SideBarItem>
+    <div css="padding-top: 64px;" />
+    <SideBarItem>
+      <span
+        css={`
+          font-weight: 500;
+          font-size: 15px;
+
+          line-height: 18px;
+        `}
+      >
+        User
+      </span>
+    </SideBarItem>
+  </div>
 );
 
 SideBarItemStory.story = {
