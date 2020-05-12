@@ -13,3 +13,8 @@ export const fontWeights = {
   medium: 600,
   bold: 700,
 };
+
+export const fontSizes = {
+  "1": "15px",
+  "2": "17px",
+};
