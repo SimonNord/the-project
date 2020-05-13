@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import UserCard from "./UserCard";
 import userEvent from "@testing-library/user-event";
+import { BrowserRouter } from "react-router-dom";
 
 it("should render the first name", () => {
   const testUser = {
@@ -34,7 +35,11 @@ it("should expand when being clicked", () => {
     email: "john@doe.com",
   };
 
-  const { queryByText } = render(<UserCard user={testUser} />);
+  const { queryByText } = render(
+    <BrowserRouter>
+      <UserCard user={testUser} />
+    </BrowserRouter>
+  );
 
   expect(queryByText("Profile & Settings")).not.toBeInTheDocument(); // not expanded yet, should be invisible
   userEvent.click(queryByText(testUser.firstName)); // now I clicked on the card (in this case firstName, but could have been anything else)
@@ -48,7 +53,11 @@ it("should collapse when clicked again", () => {
     email: "john@doe.com",
   };
 
-  const { queryByText } = render(<UserCard user={testUser} />);
+  const { queryByText } = render(
+    <BrowserRouter>
+      <UserCard user={testUser} />
+    </BrowserRouter>
+  );
 
   expect(queryByText("Profile & Settings")).not.toBeInTheDocument(); // not expanded yet, should be invisible
 
