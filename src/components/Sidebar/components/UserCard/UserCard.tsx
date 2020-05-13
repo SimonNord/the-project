@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "styled-components/macro";
 import { User } from "types";
 import avatar from "./assets/avatar-image.png";
-import ExpandedList from "../ExpandedList/ExpandedList";
+import ExpandedList, { ExpandedListItem } from "../ExpandedList/ExpandedList";
 
 /* Import styles */
 import {
@@ -36,8 +36,8 @@ const UserCard = (props: Props) => {
       </Background>
       {show && (
         <ExpandedList>
-          <a href="#">Profile &amp; Settings</a>
-          <a href="#">Sign Out</a>
+          <ExpandedListItem>Profile &amp; Settings</ExpandedListItem>
+          <ExpandedListItem>Sign Out</ExpandedListItem>
         </ExpandedList>
       )}
     </div>
