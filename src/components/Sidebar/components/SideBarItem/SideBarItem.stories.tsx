@@ -37,7 +37,6 @@ export const SideBarItemStory = () => (
         css={`
           font-weight: 500;
           font-size: 15px;
-
           line-height: 18px;
         `}
       >
