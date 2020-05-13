@@ -1,4 +1,5 @@
 import React from "react";
+import "styled-components/macro";
 
 type Props = {
   top: number;
@@ -15,7 +16,7 @@ const Spacer = ({ top, right, bottom, left }: Props) => {
 
   return (
     <div
-      style={{
+      css={{
         padding: `${paddingTop}px ${paddingRight}px ${paddingBottom}px ${paddingLeft}px`,
       }}
     ></div>
