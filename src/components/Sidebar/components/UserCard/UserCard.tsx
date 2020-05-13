@@ -41,7 +41,9 @@ const UserCard = (props: Props) => {
           <ExpandedListItem>
             <Link to="/settings">Profile & Settings</Link>
           </ExpandedListItem>
-          <ExpandedListItem href="#">Sign Out</ExpandedListItem>
+          <ExpandedListItem>
+            <Link to="/">Sign Out</Link>
+          </ExpandedListItem>
         </ExpandedList>
       )}
     </div>
