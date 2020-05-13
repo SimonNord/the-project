@@ -1,7 +1,7 @@
 import React from "react";
 import "styled-components/macro";
 
-import ExpandedList from "./ExpandedList";
+import ExpandedList, { ExpandedListItem } from "./ExpandedList";
 
 export default {
   title: "ExpandedList",
@@ -10,8 +10,8 @@ export default {
 export const ExpandedListStory = () => (
   <div>
     <ExpandedList>
-      <a href="#">Hello</a>
-      <a href="#">Goodbye</a>
+      <ExpandedListItem>Profile &amp; Settings</ExpandedListItem>
+      <ExpandedListItem>Logout</ExpandedListItem>
     </ExpandedList>
   </div>
 );

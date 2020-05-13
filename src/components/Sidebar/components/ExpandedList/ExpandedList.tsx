@@ -6,7 +6,6 @@ type Props = {
   children: ReactNode;
 };
 
-// Defines the component plus it's css
 const StyledExpandedList = styled.div`
   position: absolute;
   left: 0;
@@ -16,18 +15,18 @@ const StyledExpandedList = styled.div`
   border-radius: 3px;
   background-color: ${Color.White};
   text-align: left;
+  z-index: 999;
+`;
 
-  a {
-    display: block;
-    padding: 11px 15px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    color: ${Color.CodGray};
-    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  }
+export const ExpandedListItem = styled.span`
+  display: block;
+  font-size: 15px;
+  padding: 11px 15px;
+  font-weight: 500;
+  color: ${Color.CodGray};
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
-  a:hover {
+  &:hover {
     color: white;
     background-color: ${Color.DodgerBlue};
   }
