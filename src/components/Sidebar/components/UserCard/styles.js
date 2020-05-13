@@ -61,7 +61,7 @@ export const ExpandedList = styled.div`
   left: 0;
 `;
 
-export const ExpandedListItem = styled.a`
+export const ExpandedListItem = styled.div`
   padding: 6px;
   display: block;
   text-decoration: none;
