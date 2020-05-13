@@ -1,8 +1,13 @@
 import React from "react";
+
 import "styled-components/macro";
-import { Color } from "variables";
-import { User } from "types";
 import styled from "styled-components/macro";
+
+import { Color } from "variables";
+
+import UserCard from "./components/UserCard/UserCard";
+import { User } from "types";
+import SectionHeadline from "./components/SectionHeadline/SectionHeadline";
 import Button from "components/Button/Button";
 import { ReactComponent as plus } from "components/Sidebar/assets/plus.svg";
 import UserCard from "./components/UserCard/UserCard";
