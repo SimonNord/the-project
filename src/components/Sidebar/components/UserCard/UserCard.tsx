@@ -3,6 +3,7 @@ import "styled-components/macro";
 import { User } from "types";
 import avatar from "./assets/avatar-image.png";
 import ExpandedList, { ExpandedListItem } from "../ExpandedList/ExpandedList";
+import { Link } from "react-router-dom";
 
 /* Import styles */
 import {
@@ -36,8 +37,12 @@ const UserCard = (props: Props) => {
       </Background>
       {show && (
         <ExpandedList>
-          <ExpandedListItem>Profile &amp; Settings</ExpandedListItem>
-          <ExpandedListItem>Sign Out</ExpandedListItem>
+          <ExpandedListItem>
+            <Link to="/settings">Profile & Settings</Link>
+          </ExpandedListItem>
+          <ExpandedListItem>
+            <Link to="/">Sign Out</Link>
+          </ExpandedListItem>
         </ExpandedList>
       )}
     </div>
