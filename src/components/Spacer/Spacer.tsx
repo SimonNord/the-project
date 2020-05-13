@@ -2,13 +2,13 @@ import React from "react";
 import "styled-components/macro";
 
 type Props = {
-  top: number;
-  right: number;
-  bottom: number;
-  left: number;
+  top?: number;
+  right?: number;
+  bottom?: number;
+  left?: number;
 };
 
-const Spacer = ({ top, right, bottom, left }: Props) => {
+const Spacer = ({ top = 0, right = 0, bottom = 0, left = 0 }: Props) => {
   const paddingTop = top * 8;
   const paddingRight = right * 8;
   const paddingBottom = bottom * 8;
@@ -21,13 +21,6 @@ const Spacer = ({ top, right, bottom, left }: Props) => {
       }}
     ></div>
   );
-};
-
-Spacer.defaultProps = {
-  top: 0,
-  right: 0,
-  bottom: 0,
-  left: 0,
 };
 
 export default Spacer;
