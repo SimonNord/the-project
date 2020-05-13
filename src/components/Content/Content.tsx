@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 import NoContentPlaceholder from "./components/NoContentPlaceholder/NoContentPlaceholder";
+import ProfileAndSettings from "./components/ProfileAndSettings";
+import { Switch, Route } from "react-router-dom";
 
 type Props = {
   className?: string;
@@ -15,7 +17,14 @@ const FullHeightAndWidth = styled.div`
 const Content = (props: Props) => {
   return (
     <FullHeightAndWidth className={props.className}>
-      <NoContentPlaceholder />
+      <Switch>
+        <Route path="/settings">
+          <ProfileAndSettings />
+        </Route>
+        <Route path="/">
+          <NoContentPlaceholder />
+        </Route>
+      </Switch>
     </FullHeightAndWidth>
   );
 };
