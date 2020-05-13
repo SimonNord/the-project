@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import NoContentPlaceholder from "./components/NoContentPlaceholder/NoContentPlaceholder";
-import ProfileAndSettings from "./components/ProfileAndSettings.component";
+import ProfileAndSettings from "./components/ProfileAndSettings";
 import { Switch, Route } from "react-router-dom";
 
 type Props = {
