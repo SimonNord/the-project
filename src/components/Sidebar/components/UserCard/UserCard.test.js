@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import UserCard from "./UserCard";
 import userEvent from "@testing-library/user-event";
-import { BrowserRouter } from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
 
 it("should render the first name", () => {
   const testUser = {
@@ -36,9 +36,9 @@ it("should expand when being clicked", () => {
   };
 
   const { queryByText } = render(
-    <BrowserRouter>
+    <MemoryRouter>
       <UserCard user={testUser} />
-    </BrowserRouter>
+    </MemoryRouter>
   );
 
   expect(queryByText("Profile & Settings")).not.toBeInTheDocument(); // not expanded yet, should be invisible
@@ -54,9 +54,9 @@ it("should collapse when clicked again", () => {
   };
 
   const { queryByText } = render(
-    <BrowserRouter>
+    <MemoryRouter>
       <UserCard user={testUser} />
-    </BrowserRouter>
+    </MemoryRouter>
   );
 
   expect(queryByText("Profile & Settings")).not.toBeInTheDocument(); // not expanded yet, should be invisible
