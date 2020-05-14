@@ -43,6 +43,15 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "k8hansen",
+      "name": "Kate Hansen",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13206464?v=4",
+      "profile": "http://k8hansen.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
