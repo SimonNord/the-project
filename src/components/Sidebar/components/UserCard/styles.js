@@ -50,6 +50,12 @@ export const Image = styled.img`
   border-radius: 3px;
 `;
 
+export const LinkText = styled.span`
+  display: inline-block;
+  color: ${Color.CodGray};
+  text-decoration: none;
+`;
+
 export const ArrowDown = styled(ChevronDown)`
   margin: 0 10px 0 15px;
   fill: ${Color.White};

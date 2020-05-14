@@ -14,6 +14,7 @@ import {
   Username,
   Email,
   ArrowDown,
+  LinkText,
 } from "./styles";
 
 type Props = {
@@ -38,10 +39,14 @@ const UserCard = (props: Props) => {
       {show && (
         <ExpandedList>
           <ExpandedListItem>
-            <Link to="/settings">Profile & Settings</Link>
+            <Link to="/settings">
+              <LinkText>Profile & Settings</LinkText>
+            </Link>
           </ExpandedListItem>
           <ExpandedListItem>
-            <Link to="/">Sign Out</Link>
+            <Link to="/">
+              <LinkText>Sign Out</LinkText>
+            </Link>
           </ExpandedListItem>
         </ExpandedList>
       )}
