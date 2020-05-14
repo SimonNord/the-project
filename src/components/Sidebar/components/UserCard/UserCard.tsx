@@ -3,6 +3,7 @@ import "styled-components/macro";
 import { User } from "types";
 import avatar from "./assets/avatar-image.png";
 import ExpandedList, { ExpandedListItem } from "../ExpandedList/ExpandedList";
+import { Link } from "react-router-dom";
 
 /* Import styles */
 import {
@@ -13,7 +14,7 @@ import {
   Username,
   Email,
   ArrowDown,
-  StyledLink,
+  NoDecorLink,
 } from "./styles";
 
 type Props = {
@@ -38,10 +39,14 @@ const UserCard = (props: Props) => {
       {show && (
         <ExpandedList>
           <ExpandedListItem>
-            <StyledLink to="/settings">Profile & Settings</StyledLink>
+            <Link to="/settings">
+              <NoDecorLink>Profile & Settings</NoDecorLink>
+            </Link>
           </ExpandedListItem>
           <ExpandedListItem>
-            <StyledLink to="/">Sign Out</StyledLink>
+            <Link to="/">
+              <NoDecorLink>Sign Out</NoDecorLink>
+            </Link>
           </ExpandedListItem>
         </ExpandedList>
       )}
