@@ -10,6 +10,7 @@ import { User } from "types";
 import SectionHeadline from "./components/SectionHeadline/SectionHeadline";
 import Button from "components/Button/Button";
 import { ReactComponent as plus } from "components/Sidebar/assets/plus.svg";
+import SideBarItem from "./components/SideBarItem/SideBarItem";
 
 type Props = {
   className?: string;
@@ -32,7 +33,7 @@ const Plus = styled(plus)`
 `;
 
 const TopPart = styled.div`
-  padding: 13px 10px;
+  padding: 13px 0px;
 `;
 
 const SideBar = (props: Props) => {
@@ -40,7 +41,12 @@ const SideBar = (props: Props) => {
     <Background className={props.className}>
       <TopPart>
         <UserCard user={props.user} />
+        <SideBarItem children={"Afternoon"} />
+        <SideBarItem children={"All Habits"} />
         <SectionHeadline>More</SectionHeadline>
+        <SideBarItem children={"Progress"} />
+        <SideBarItem children={"Manage Habits"} />
+        <SideBarItem children={"Resources"} />
       </TopPart>
       <BottomPart>
         <Button>

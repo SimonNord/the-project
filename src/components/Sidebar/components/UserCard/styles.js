@@ -9,6 +9,7 @@ export const Background = styled.div`
   align-items: center;
   justify-content: space-between;
   border-radius: 3px;
+  margin: 0px 10px;
 `;
 
 export const LeftContent = styled.div`
