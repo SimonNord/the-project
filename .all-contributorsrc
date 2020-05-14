@@ -21,7 +21,8 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/6280897?v=4",
       "profile": "https://github.com/limbovski",
       "contributions": [
-        "code"
+        "code",
+        "test"
       ]
     },
     {
@@ -30,7 +31,8 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/25019818?v=4",
       "profile": "https://github.com/ruaridhm",
       "contributions": [
-        "code"
+        "code",
+        "test"
       ]
     },
     {
@@ -41,6 +43,15 @@
       "contributions": [
         "code",
         "test"
+      ]
+    },
+    {
+      "login": "k8hansen",
+      "name": "Kate Hansen",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13206464?v=4",
+      "profile": "http://k8hansen.com",
+      "contributions": [
+        "code"
       ]
     }
   ],
