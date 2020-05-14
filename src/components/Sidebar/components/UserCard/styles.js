@@ -1,6 +1,5 @@
 import styled from "styled-components/macro";
 import { Color } from "../../../../variables";
-import { fontWeights } from "../../../../variables";
 import { ReactComponent as ChevronDown } from "./assets/chevron-down.svg";
 import { Link } from "react-router-dom";
 
