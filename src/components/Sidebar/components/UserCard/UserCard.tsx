@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "styled-components/macro";
 import { User } from "types";
 import avatar from "./assets/avatar-image.png";
+import ExpandedList, { ExpandedListItem } from "../ExpandedList/ExpandedList";
 import { Link } from "react-router-dom";
 
 /* Import styles */
@@ -12,8 +13,6 @@ import {
   TextContainer,
   Username,
   Email,
-  ExpandedList,
-  ExpandedListItem,
   ArrowDown,
 } from "./styles";
 

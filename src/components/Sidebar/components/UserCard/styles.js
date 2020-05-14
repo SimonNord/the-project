@@ -49,28 +49,6 @@ export const Image = styled.img`
   border-radius: 3px;
 `;
 
-export const ExpandedList = styled.div`
-  margin-top: 3px;
-  text-align: left;
-  padding: 15px;
-  background-color: white;
-  border-radius: 3px;
-
-  position: absolute;
-  right: 0;
-  left: 0;
-`;
-
-export const ExpandedListItem = styled.div`
-  padding: 6px;
-  display: block;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 500;
-  color: ${Color.CodGray};
-`;
-
 export const ArrowDown = styled(ChevronDown)`
   margin: 0 10px 0 15px;
   fill: ${Color.White};
