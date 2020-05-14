@@ -49,7 +49,7 @@ export const Image = styled.img`
   border-radius: 3px;
 `;
 
-export const NoDecorLink = styled.span`
+export const LinkText = styled.span`
   display: inline-block;
   color: ${Color.CodGray};
   text-decoration: none;

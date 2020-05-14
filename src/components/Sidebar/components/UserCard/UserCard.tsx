@@ -14,7 +14,7 @@ import {
   Username,
   Email,
   ArrowDown,
-  NoDecorLink,
+  LinkText,
 } from "./styles";
 
 type Props = {
@@ -40,12 +40,12 @@ const UserCard = (props: Props) => {
         <ExpandedList>
           <ExpandedListItem>
             <Link to="/settings">
-              <NoDecorLink>Profile & Settings</NoDecorLink>
+              <LinkText>Profile & Settings</LinkText>
             </Link>
           </ExpandedListItem>
           <ExpandedListItem>
             <Link to="/">
-              <NoDecorLink>Sign Out</NoDecorLink>
+              <LinkText>Sign Out</LinkText>
             </Link>
           </ExpandedListItem>
         </ExpandedList>
