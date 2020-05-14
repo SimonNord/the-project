@@ -1,6 +1,8 @@
 import styled from "styled-components/macro";
 import { Color } from "../../../../variables";
+import { fontWeights } from "../../../../variables";
 import { ReactComponent as ChevronDown } from "./assets/chevron-down.svg";
+import { Link } from "react-router-dom";
 
 export const Background = styled.div`
   display: flex;
@@ -47,6 +49,11 @@ export const Image = styled.img`
   width: 42px;
   height: 42px;
   border-radius: 3px;
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: ${Color.CodGray};
 `;
 
 export const ArrowDown = styled(ChevronDown)`
