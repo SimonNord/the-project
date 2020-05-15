@@ -4,6 +4,7 @@ import SideBar from "./components/Sidebar/SideBar";
 import Content from "./components/Content/Content";
 import GlobalStyle from "./GlobalStyle";
 import { BrowserRouter as Router } from "react-router-dom";
+import pckg from "../package.json";
 
 const Container = styled.div`
   display: flex;
@@ -19,7 +20,7 @@ const HARDCODED_USER = {
 function App() {
   return (
     <>
-      <Router>
+      <Router basename={pckg.homepage}>
         <Container>
           <SideBar
             css={`
