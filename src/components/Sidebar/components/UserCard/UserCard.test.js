@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import UserCard from "./UserCard";
 import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router-dom";
@@ -11,8 +11,8 @@ it("should render the first name", () => {
     email: "john@doe.com",
   };
 
-  const { queryByText } = render(<UserCard user={testUser} />);
-  const firstName = queryByText(testUser.firstName);
+  render(<UserCard user={testUser} />);
+  const firstName = screen.queryByText(testUser.firstName);
   expect(firstName).toBeInTheDocument();
 });
 
@@ -23,8 +23,8 @@ it("should render the email", () => {
     email: "john@doe.com",
   };
 
-  const { queryByText } = render(<UserCard user={testUser} />);
-  const email = queryByText(testUser.email);
+  render(<UserCard user={testUser} />);
+  const email = screen.queryByText(testUser.email);
   expect(email).toBeInTheDocument();
 });
 
@@ -35,15 +35,19 @@ it("should expand when being clicked", () => {
     email: "john@doe.com",
   };
 
-  const { queryByText } = render(
+  render(
     <MemoryRouter>
       <UserCard user={testUser} />
     </MemoryRouter>
   );
 
-  expect(queryByText("Profile & Settings")).not.toBeInTheDocument(); // not expanded yet, should be invisible
-  userEvent.click(queryByText(testUser.firstName)); // now I clicked on the card (in this case firstName, but could have been anything else)
-  expect(queryByText("Profile & Settings")).toBeInTheDocument(); // now it should be visible
+  expect(
+    screen.queryByRole("menuitem", { name: "Profile & Settings" })
+  ).not.toBeInTheDocument(); // not expanded yet, should be invisible
+  userEvent.click(screen.queryByText(testUser.firstName)); // now I clicked on the card (in this case firstName, but could have been anything else)
+  expect(
+    screen.queryByRole("menuitem", { name: "Profile & Settings" })
+  ).toBeInTheDocument(); // now it should be visible
 });
 
 it("should collapse when clicked again", () => {
@@ -53,17 +57,17 @@ it("should collapse when clicked again", () => {
     email: "john@doe.com",
   };
 
-  const { queryByText } = render(
+  render(
     <MemoryRouter>
       <UserCard user={testUser} />
     </MemoryRouter>
   );
 
-  expect(queryByText("Profile & Settings")).not.toBeInTheDocument(); // not expanded yet, should be invisible
+  expect(screen.queryByText("Profile & Settings")).not.toBeInTheDocument(); // not expanded yet, should be invisible
 
-  userEvent.click(queryByText(testUser.firstName)); // now I clicked on the card (in this case firstName, but could have been anything else)
-  expect(queryByText("Profile & Settings")).toBeInTheDocument(); // now it should be visible
+  userEvent.click(screen.queryByText(testUser.firstName)); // now I clicked on the card (in this case firstName, but could have been anything else)
+  expect(screen.queryByText("Profile & Settings")).toBeInTheDocument(); // now it should be visible
 
-  userEvent.click(queryByText(testUser.firstName)); // now I clicked on the card (in this case firstName, but could have been anything else)
-  expect(queryByText("Profile & Settings")).not.toBeInTheDocument(); // collapsed again, should be invisible
+  userEvent.click(screen.queryByText(testUser.firstName)); // now I clicked on the card (in this case firstName, but could have been anything else)
+  expect(screen.queryByText("Profile & Settings")).not.toBeInTheDocument(); // collapsed again, should be invisible
 });
