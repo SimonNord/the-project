@@ -11,7 +11,7 @@ const SettingsMenuWrapper = styled.div`
   flex-shrink: 0;
   border: 1px solid #e5eafa;
   border-right: none;
-  border-radius: 3px 0 0 3px;
+  border-radius: 5px 0 0 5px;
 `;
 
 const SettingsMenu = () => {
