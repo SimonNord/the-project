@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Color, fontWeights, fontSizes } from "variables";
+import { Color } from "variables";
 import "styled-components/macro";
 
 type Props = {
@@ -26,7 +26,27 @@ const FormattedText = (props: Props) => {
 FormattedText.defaultProps = {
   color: Color.Black,
   weight: "medium",
-  size: "1",
+  size: "0",
+};
+
+const fontWeights = {
+  regular: 400,
+  medium: 600,
+  bold: 700,
+};
+
+const fontSizes = {
+  "-2": "12px",
+  "-1": "14px",
+  "0": "16px",
+  "1": "18px",
+  "2": "20px",
+  "3": "24px",
+  "4": "30px",
+  "5": "36px",
+  "6": "48px",
+  "7": "60px",
+  "8": "72px",
 };
 
 export default FormattedText;
