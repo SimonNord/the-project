@@ -1,5 +1,5 @@
 import React from "react";
-import { render, getByText } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import FormattedText from "./FormattedText";
 
 it("should render a text with a default font-size of 16px", () => {
