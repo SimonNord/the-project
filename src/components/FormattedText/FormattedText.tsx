@@ -6,7 +6,7 @@ type Props = {
   children: ReactNode;
   color: Color;
   weight: "regular" | "medium" | "bold";
-  size: "1" | "2";
+  size: "-2" | "-1" | "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8";
 };
 
 const FormattedText = (props: Props) => {
