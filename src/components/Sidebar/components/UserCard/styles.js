@@ -54,6 +54,10 @@ export const LinkText = styled.span`
   display: inline-block;
   color: ${Color.CodGray};
   text-decoration: none;
+
+  &:hover {
+    color: ${Color.White};
+  }
 `;
 
 export const ArrowDown = styled(ChevronDown)`
