@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import { Color } from "variables";
 import "styled-components/macro";
 
-type Props = {
+export type Props = {
   children: ReactNode;
   color: Color;
   weight: "regular" | "medium" | "bold";

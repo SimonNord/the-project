@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import FormattedText from "./FormattedText";
+import FormattedText, { Props } from "./FormattedText";
 
 it("should render a text with a default font-size of 16px", () => {
   const { getByText } = render(<FormattedText>My text</FormattedText>);
@@ -9,7 +9,7 @@ it("should render a text with a default font-size of 16px", () => {
   expect(mainText).toHaveStyle({ fontSize: "16px" });
 });
 
-test.each([
+test.each<[Props["size"], string]>([
   ["-2", "12"],
   ["-1", "14"],
   ["0", "16"],
