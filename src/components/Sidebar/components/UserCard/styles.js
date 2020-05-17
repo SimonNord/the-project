@@ -55,7 +55,8 @@ export const LinkText = styled.span`
   color: ${Color.CodGray};
   padding: 11px 15px;
   &:hover {
-    color: white;
+    color: ${Color.White};
+
   }
 `;
 
