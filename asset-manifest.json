@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/the-project/static/js/main.e095e6aa.chunk.js",
-    "main.js.map": "/the-project/static/js/main.e095e6aa.chunk.js.map",
-    "runtime-main.js": "/the-project/static/js/runtime-main.eec63070.js",
-    "runtime-main.js.map": "/the-project/static/js/runtime-main.eec63070.js.map",
-    "static/js/2.6b1f42a2.chunk.js": "/the-project/static/js/2.6b1f42a2.chunk.js",
-    "static/js/2.6b1f42a2.chunk.js.map": "/the-project/static/js/2.6b1f42a2.chunk.js.map",
-    "index.html": "/the-project/index.html",
-    "precache-manifest.2b83b9c2bb1fd65ed1f977c77ef41d18.js": "/the-project/precache-manifest.2b83b9c2bb1fd65ed1f977c77ef41d18.js",
-    "service-worker.js": "/the-project/service-worker.js",
-    "static/js/2.6b1f42a2.chunk.js.LICENSE.txt": "/the-project/static/js/2.6b1f42a2.chunk.js.LICENSE.txt",
-    "static/media/avatar-image.png": "/the-project/static/media/avatar-image.b15acc02.png",
-    "static/media/chevron-down.e6fd88ca.svg": "/the-project/static/media/chevron-down.e6fd88ca.svg",
-    "static/media/no_content_placeholder_image.png": "/the-project/static/media/no_content_placeholder_image.86a96933.png",
-    "static/media/plus.50c5cf6f.svg": "/the-project/static/media/plus.50c5cf6f.svg"
+    "main.js": "/static/js/main.2d56a805.chunk.js",
+    "main.js.map": "/static/js/main.2d56a805.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.940814ae.js",
+    "runtime-main.js.map": "/static/js/runtime-main.940814ae.js.map",
+    "static/js/2.ff446d34.chunk.js": "/static/js/2.ff446d34.chunk.js",
+    "static/js/2.ff446d34.chunk.js.map": "/static/js/2.ff446d34.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e6461d4ba16854496dc103d57dd4473b.js": "/precache-manifest.e6461d4ba16854496dc103d57dd4473b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.ff446d34.chunk.js.LICENSE.txt": "/static/js/2.ff446d34.chunk.js.LICENSE.txt",
+    "static/media/avatar-image.png": "/static/media/avatar-image.b15acc02.png",
+    "static/media/chevron-down.e6fd88ca.svg": "/static/media/chevron-down.e6fd88ca.svg",
+    "static/media/no_content_placeholder_image.png": "/static/media/no_content_placeholder_image.86a96933.png",
+    "static/media/plus.50c5cf6f.svg": "/static/media/plus.50c5cf6f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.eec63070.js",
-    "static/js/2.6b1f42a2.chunk.js",
-    "static/js/main.e095e6aa.chunk.js"
+    "static/js/runtime-main.940814ae.js",
+    "static/js/2.ff446d34.chunk.js",
+    "static/js/main.2d56a805.chunk.js"
   ]
 }
