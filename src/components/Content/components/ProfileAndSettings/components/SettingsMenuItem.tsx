@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styled from "styled-components/macro";
 import { Link } from "react-router-dom";
 import { Color } from "../../../../../variables";
@@ -13,12 +13,13 @@ const ListItem = styled.div`
 
   &:hover {
     background-color: ${Color.DodgerBlue};
+    color: ${Color.White};
   }
 `;
 
 type Props = {
   path: string;
-  linkText: string;
+  children: ReactNode;
 };
 
 const SettingsMenuItem = (props: Props) => {
@@ -26,7 +27,7 @@ const SettingsMenuItem = (props: Props) => {
     <div>
       <ListItem>
         <Link to={props.path}>
-          <LinkText>{props.linkText}</LinkText>
+          <LinkText>{props.children}</LinkText>
         </Link>
       </ListItem>
     </div>

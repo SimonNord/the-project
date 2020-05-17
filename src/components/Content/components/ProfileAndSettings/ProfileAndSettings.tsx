@@ -9,27 +9,24 @@ import Password from "./components/Password";
 const ProfileSettingsContainer = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 15px;
 `;
 
 const ProfileAndSettings = () => {
   return (
-    <div>
-      <ProfileSettingsContainer>
-        <SettingsMenu />
-        <Switch>
-          <Route path="/settings/general">
-            <General />
-          </Route>
-          <Route path="/settings/app-settings">
-            <AppSettings />
-          </Route>
-          <Route path="/settings/password">
-            <Password />
-          </Route>
-        </Switch>
-      </ProfileSettingsContainer>
-    </div>
+    <ProfileSettingsContainer>
+      <SettingsMenu />
+      <Switch>
+        <Route path="/settings/general">
+          <General />
+        </Route>
+        <Route path="/settings/app-settings">
+          <AppSettings />
+        </Route>
+        <Route path="/settings/password">
+          <Password />
+        </Route>
+      </Switch>
+    </ProfileSettingsContainer>
   );
 };
 

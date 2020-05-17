@@ -12,9 +12,11 @@ const Menu = styled.div`
 const SettingsMenu = () => {
   return (
     <Menu>
-      <SettingsMenuItem path="/settings/general" linkText="General" />
-      <SettingsMenuItem path="/settings/app-settings" linkText="App Settings" />
-      <SettingsMenuItem path="/settings/password" linkText="Password" />
+      <SettingsMenuItem path="/settings/general">General</SettingsMenuItem>
+      <SettingsMenuItem path="/settings/app-settings">
+        App Settings
+      </SettingsMenuItem>
+      <SettingsMenuItem path="/settings/password">Password</SettingsMenuItem>
     </Menu>
   );
 };
