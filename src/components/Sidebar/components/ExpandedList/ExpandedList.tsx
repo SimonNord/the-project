@@ -6,7 +6,9 @@ type Props = {
   children: ReactNode;
 };
 
-const StyledExpandedList = styled.div`
+const StyledExpandedList = styled.div.attrs({
+  role: "menu",
+})`
   position: absolute;
   left: 0;
   right: 0;
@@ -18,7 +20,9 @@ const StyledExpandedList = styled.div`
   z-index: 999;
 `;
 
-export const ExpandedListItem = styled.span`
+export const ExpandedListItem = styled.span.attrs({
+  role: "menuitem",
+})`
   display: block;
   font-size: 15px;
   padding: 11px 15px;
