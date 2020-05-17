@@ -38,16 +38,16 @@ const UserCard = (props: Props) => {
       </Background>
       {show && (
         <ExpandedList>
-          <ExpandedListItem>
-            <Link to="/settings">
+          <Link to="/settings">
+            <ExpandedListItem>
               <LinkText>Profile & Settings</LinkText>
-            </Link>
-          </ExpandedListItem>
-          <ExpandedListItem>
-            <Link to="/">
+            </ExpandedListItem>
+          </Link>
+          <Link to="/">
+            <ExpandedListItem>
               <LinkText>Sign Out</LinkText>
-            </Link>
-          </ExpandedListItem>
+            </ExpandedListItem>
+          </Link>
         </ExpandedList>
       )}
     </div>
