@@ -11,6 +11,7 @@ import SectionHeadline from "./components/SectionHeadline/SectionHeadline";
 import Button from "components/Button/Button";
 import { ReactComponent as plus } from "components/Sidebar/assets/plus.svg";
 import SideBarItem from "./components/SideBarItem/SideBarItem";
+import Spacer from "../Spacer/Spacer";
 
 type Props = {
   className?: string;
@@ -41,6 +42,7 @@ const SideBar = (props: Props) => {
     <Background className={props.className}>
       <TopPart>
         <UserCard user={props.user} />
+        <Spacer top={2} />
         <SideBarItem children={"Afternoon"} />
         <SideBarItem children={"All Habits"} />
         <SectionHeadline>More</SectionHeadline>
