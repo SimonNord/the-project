@@ -25,7 +25,6 @@ export const ExpandedListItem = styled.span.attrs({
 })`
   display: block;
   font-size: 15px;
-  padding: 11px 15px;
   font-weight: 500;
   color: ${Color.CodGray};
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
