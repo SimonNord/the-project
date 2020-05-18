@@ -12,7 +12,7 @@ const StyledExpandedList = styled.div.attrs({
   position: absolute;
   left: 0;
   right: 0;
-  margin: 3px 0;
+  margin: 3px 10px;
   padding: 4px 0;
   border-radius: 3px;
   background-color: ${Color.White};
