@@ -9,14 +9,18 @@ const Menu = styled.div`
   border-radius: 3px;
 `;
 
+const MenuList = styled.ul``;
+
 const SettingsMenu = () => {
   return (
     <Menu>
-      <SettingsMenuItem path="/settings/general">General</SettingsMenuItem>
-      <SettingsMenuItem path="/settings/app-settings">
-        App Settings
-      </SettingsMenuItem>
-      <SettingsMenuItem path="/settings/password">Password</SettingsMenuItem>
+      <MenuList>
+        <SettingsMenuItem path="/settings/general">General</SettingsMenuItem>
+        <SettingsMenuItem path="/settings/app-settings">
+          App Settings
+        </SettingsMenuItem>
+        <SettingsMenuItem path="/settings/password">Password</SettingsMenuItem>
+      </MenuList>
     </Menu>
   );
 };
