@@ -1,14 +1,14 @@
 import React from "react";
-import SideBarItem from "./SideBarItem";
+import SidebarItem from "./SidebarItem";
 import "styled-components/macro";
 
 export default {
-  title: "SideBarItem",
+  title: "SidebarItem",
 };
 
-export const SideBarItemStory = () => (
+export const SidebarItemStory = () => (
   <div>
-    <SideBarItem>
+    <SidebarItem>
       <span
         css={`
           font-weight: 500;
@@ -18,9 +18,9 @@ export const SideBarItemStory = () => (
       >
         Progress
       </span>
-    </SideBarItem>
+    </SidebarItem>
     <div css="padding-top: 64px;" />
-    <SideBarItem>
+    <SidebarItem>
       <span
         css={`
           font-weight: 500;
@@ -30,9 +30,9 @@ export const SideBarItemStory = () => (
       >
         Info
       </span>
-    </SideBarItem>
+    </SidebarItem>
     <div css="padding-top: 64px;" />
-    <SideBarItem>
+    <SidebarItem>
       <span
         css={`
           font-weight: 500;
@@ -42,10 +42,10 @@ export const SideBarItemStory = () => (
       >
         User
       </span>
-    </SideBarItem>
+    </SidebarItem>
   </div>
 );
 
-SideBarItemStory.story = {
+SidebarItemStory.story = {
   name: "default",
 };

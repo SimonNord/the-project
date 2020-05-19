@@ -6,7 +6,7 @@ type Props = {
   children: ReactNode;
 };
 
-const SideBarItem = (props: Props) => {
+const SidebarItem = (props: Props) => {
   return (
     <div
       css={`
@@ -31,4 +31,4 @@ const SideBarItem = (props: Props) => {
   );
 };
 
-export default SideBarItem;
+export default SidebarItem;
