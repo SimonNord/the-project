@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 import NoContentPlaceholder from "./components/NoContentPlaceholder/NoContentPlaceholder";
 import ProfileAndSettings from "./components/ProfileAndSettings";
 import { Switch, Route } from "react-router-dom";
+import { Routes } from "variables";
 
 type Props = {
   className?: string;
@@ -18,10 +19,10 @@ const Content = (props: Props) => {
   return (
     <FullHeightAndWidth className={props.className}>
       <Switch>
-        <Route path="/settings">
+        <Route path={Routes.Settings}>
           <ProfileAndSettings />
         </Route>
-        <Route path="/">
+        <Route path={Routes.Home}>
           <NoContentPlaceholder />
         </Route>
       </Switch>
