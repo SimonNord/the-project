@@ -7,3 +7,11 @@ export enum Color {
   DodgerBlue = "rgb(67, 124, 255)",
   GreySeeThru = "hsla(0,0%,100%,.3)",
 }
+
+// Some Routes below are set to "/" as placeholders
+// until we build the end points and replace them.
+export enum Routes {
+  Home = "/",
+  SignOut = "/",
+  Settings = "/settings",
+}

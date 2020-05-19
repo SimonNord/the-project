@@ -4,6 +4,7 @@ import { User } from "types";
 import avatar from "./assets/avatar-image.png";
 import ExpandedList, { ExpandedListItem } from "../ExpandedList/ExpandedList";
 import { Link } from "react-router-dom";
+import { Routes } from "variables";
 
 /* Import styles */
 import {
@@ -39,12 +40,12 @@ const UserCard = (props: Props) => {
       {show && (
         <ExpandedList>
           <ExpandedListItem>
-            <Link css={{ textDecoration: "none" }} to="/settings">
+            <Link css={{ textDecoration: "none" }} to={Routes.Settings}>
               <LinkText>Profile & Settings</LinkText>
             </Link>
           </ExpandedListItem>
           <ExpandedListItem>
-            <Link css={{ textDecoration: "none" }} to="/">
+            <Link css={{ textDecoration: "none" }} to={Routes.SignOut}>
               <LinkText>Sign Out</LinkText>
             </Link>
           </ExpandedListItem>
