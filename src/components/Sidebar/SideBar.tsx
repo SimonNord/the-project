@@ -10,7 +10,8 @@ import { User } from "types";
 import SectionHeadline from "./components/SectionHeadline/SectionHeadline";
 import Button from "components/Button/Button";
 import { ReactComponent as plus } from "components/Sidebar/assets/plus.svg";
-import SideBarItem from "./components/SideBarItem/SideBarItem";
+import Menu from "../Menu/Menu";
+import MenuItem from "../Menu/components/MenuItem";
 import Spacer from "../Spacer/Spacer";
 
 type Props = {
@@ -43,12 +44,23 @@ const SideBar = (props: Props) => {
       <TopPart>
         <UserCard user={props.user} />
         <Spacer top={2} />
-        <SideBarItem children={"Afternoon"} />
-        <SideBarItem children={"All Habits"} />
-        <SectionHeadline>More</SectionHeadline>
-        <SideBarItem children={"Progress"} />
-        <SideBarItem children={"Manage Habits"} />
-        <SideBarItem children={"Resources"} />
+        <Menu>
+          <MenuItem>
+            <a href="/">Morning</a>
+          </MenuItem>
+          <MenuItem>
+            <a href="/">All Habits</a>
+          </MenuItem>
+          <MenuItem>
+            <a href="/">Progress</a>
+          </MenuItem>
+          <MenuItem>
+            <a href="/">Manage Habits</a>
+          </MenuItem>
+          <MenuItem>
+            <a href="/">Resources</a>
+          </MenuItem>
+        </Menu>
       </TopPart>
       <BottomPart>
         <Button>
