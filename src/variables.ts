@@ -7,14 +7,3 @@ export enum Color {
   DodgerBlue = "rgb(67, 124, 255)",
   GreySeeThru = "hsla(0,0%,100%,.3)",
 }
-
-export const fontWeights = {
-  regular: 400,
-  medium: 600,
-  bold: 700,
-};
-
-export const fontSizes = {
-  "1": "15px",
-  "2": "17px",
-};
