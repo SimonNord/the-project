@@ -14,6 +14,8 @@ const SettingsMenuWrapper = styled.div`
   border-radius: 5px 0 0 5px;
 `;
 
+const MenuList = styled.ul``;
+
 const SettingsMenu = () => {
   return (
     <SettingsMenuWrapper>
