@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import SideBar from "./components/Sidebar/SideBar";
+import Sidebar from "./components/Sidebar/Sidebar";
 import Content from "./components/Content/Content";
 import GlobalStyle from "./GlobalStyle";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -22,7 +22,7 @@ function App() {
     <>
       <Router basename={pckg.homepage}>
         <Container>
-          <SideBar
+          <Sidebar
             css={`
               flex: 0 0 270px;
               height: 100vh;

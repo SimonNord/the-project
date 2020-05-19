@@ -5,27 +5,26 @@ import styled from "styled-components/macro";
 
 import { Color } from "variables";
 
+import Spacer from "../Spacer/Spacer";
 import UserCard from "./components/UserCard/UserCard";
 import { User } from "types";
-import SectionHeadline from "./components/SectionHeadline/SectionHeadline";
+import SidebarItem from "./components/SidebarItem/SidebarItem";
 import Button from "components/Button/Button";
 import { ReactComponent as plus } from "components/Sidebar/assets/plus.svg";
-import SideBarItem from "./components/SideBarItem/SideBarItem";
-import Spacer from "../Spacer/Spacer";
 
 type Props = {
   className?: string;
   user: User;
 };
 
-const Background = styled.div`
+const SidebarWrapper = styled.div`
   background-color: ${Color.Cinder};
-  display: flex;
-  flex-flow: column nowrap;
 `;
 
-const BottomPart = styled.div`
-  margin: auto auto 15px 10px;
+const SidebarFooter = styled.div`
+  position: absolute;
+  bottom: 16px;
+  left: 8px;
 `;
 
 const Plus = styled(plus)`
@@ -33,31 +32,25 @@ const Plus = styled(plus)`
   margin-right: 5px;
 `;
 
-const TopPart = styled.div`
-  padding: 13px 0px;
-`;
-
-const SideBar = (props: Props) => {
+const Sidebar = ({ className, user }: Props) => {
   return (
-    <Background className={props.className}>
-      <TopPart>
-        <UserCard user={props.user} />
-        <Spacer top={2} />
-        <SideBarItem children={"Afternoon"} />
-        <SideBarItem children={"All Habits"} />
-        <SectionHeadline>More</SectionHeadline>
-        <SideBarItem children={"Progress"} />
-        <SideBarItem children={"Manage Habits"} />
-        <SideBarItem children={"Resources"} />
-      </TopPart>
-      <BottomPart>
+    <SidebarWrapper className={className}>
+      <Spacer top={2} />
+      <UserCard user={user} />
+      <Spacer top={2} />
+      <SidebarItem children={"Afternoon"} />
+      <SidebarItem children={"All Habits"} />
+      <SidebarItem children={"Progress"} />
+      <SidebarItem children={"Manage Habits"} />
+      <SidebarItem children={"Resources"} />
+      <SidebarFooter>
         <Button>
           <Plus />
           <span css={{ color: Color.White }}>Add New...</span>
         </Button>
-      </BottomPart>
-    </Background>
+      </SidebarFooter>
+    </SidebarWrapper>
   );
 };
 
-export default SideBar;
+export default Sidebar;
