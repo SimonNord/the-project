@@ -51,9 +51,13 @@ export const Image = styled.img`
 `;
 
 export const LinkText = styled.span`
-  display: inline-block;
+  display: block;
   color: ${Color.CodGray};
-  text-decoration: none;
+  padding: 11px 15px;
+  &:hover {
+    color: ${Color.White};
+
+  }
 `;
 
 export const ArrowDown = styled(ChevronDown)`

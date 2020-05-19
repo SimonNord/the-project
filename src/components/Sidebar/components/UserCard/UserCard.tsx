@@ -39,12 +39,12 @@ const UserCard = (props: Props) => {
       {show && (
         <ExpandedList>
           <ExpandedListItem>
-            <Link to="/settings">
+            <Link css={{ textDecoration: "none" }} to="/settings">
               <LinkText>Profile & Settings</LinkText>
             </Link>
           </ExpandedListItem>
           <ExpandedListItem>
-            <Link to="/">
+            <Link css={{ textDecoration: "none" }} to="/">
               <LinkText>Sign Out</LinkText>
             </Link>
           </ExpandedListItem>
