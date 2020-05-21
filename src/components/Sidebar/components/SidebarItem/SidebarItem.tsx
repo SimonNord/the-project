@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import "styled-components/macro";
-import { Color } from "variables";
+import { Color } from "../../../../variables";
 
 type Props = {
   children: ReactNode;
