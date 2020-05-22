@@ -10,7 +10,7 @@ export enum Color {
 
 // Some Routes below are set to "/" as placeholders
 // until we build the end points and replace them.
-export enum Routes {
+export enum RoutePath {
   Home = "/",
   Settings = "/settings",
 }
