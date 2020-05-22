@@ -45,7 +45,7 @@ const Sidebar = (props: Props) => {
         <Spacer top={2} />
         <Menu>
           <MenuItem>
-            <a href="/">Morning</a>
+            <a href="/">Afternoon</a>
           </MenuItem>
           <MenuItem>
             <a href="/">All Habits</a>
