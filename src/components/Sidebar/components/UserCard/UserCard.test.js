@@ -3,6 +3,7 @@ import { render, screen } from "@testing-library/react";
 import UserCard from "./UserCard";
 import userEvent from "@testing-library/user-event";
 import { MemoryRouter, Route } from "react-router-dom";
+import { RoutePath } from "variables";
 
 it("should render the first name", () => {
   const testUser = {
@@ -87,7 +88,7 @@ it("should redirect to settings", () => {
           email: "john@doe.com",
         }}
       />
-      <Route path="/settings">Only visible when on /settings</Route>
+      <Route path={RoutePath.Settings}>Only visible when on /settings</Route>
     </MemoryRouter>
   );
   expect(screen.queryByText("Profile & Settings")).not.toBeInTheDocument(); // not expanded yet, should be invisible
