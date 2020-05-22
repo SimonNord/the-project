@@ -90,7 +90,7 @@ it("should redirect to settings", () => {
       <Route path="/settings">Only visible when on /settings</Route>
     </MemoryRouter>
   );
-
+  expect(screen.queryByText("Profile & Settings")).not.toBeInTheDocument(); // not expanded yet, should be invisible
   userEvent.click(screen.queryByText(testUser.firstName));
   userEvent.click(screen.queryByText("Profile & Settings"));
   expect(
