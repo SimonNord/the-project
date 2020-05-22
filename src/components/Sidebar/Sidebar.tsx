@@ -5,26 +5,27 @@ import styled from "styled-components/macro";
 
 import { Color } from "variables";
 
-import Spacer from "../Spacer/Spacer";
 import UserCard from "./components/UserCard/UserCard";
 import { User } from "types";
-import SidebarItem from "./components/SidebarItem/SidebarItem";
 import Button from "components/Button/Button";
 import { ReactComponent as plus } from "components/Sidebar/assets/plus.svg";
+import Menu from "../Menu/Menu";
+import MenuItem from "../Menu/components/MenuItem";
+import Spacer from "../Spacer/Spacer";
 
 type Props = {
   className?: string;
   user: User;
 };
 
-const SidebarWrapper = styled.div`
+const Background = styled.div`
   background-color: ${Color.Cinder};
+  display: flex;
+  flex-flow: column nowrap;
 `;
 
-const SidebarFooter = styled.div`
-  position: absolute;
-  bottom: 16px;
-  left: 8px;
+const BottomPart = styled.div`
+  margin: auto auto 15px 10px;
 `;
 
 const Plus = styled(plus)`
@@ -32,24 +33,41 @@ const Plus = styled(plus)`
   margin-right: 5px;
 `;
 
-const Sidebar = ({ className, user }: Props) => {
+const TopPart = styled.div`
+  padding: 13px 0px;
+`;
+
+const Sidebar = (props: Props) => {
   return (
-    <SidebarWrapper className={className}>
-      <Spacer top={2} />
-      <UserCard user={user} />
-      <Spacer top={2} />
-      <SidebarItem children={"Afternoon"} />
-      <SidebarItem children={"All Habits"} />
-      <SidebarItem children={"Progress"} />
-      <SidebarItem children={"Manage Habits"} />
-      <SidebarItem children={"Resources"} />
-      <SidebarFooter>
+    <Background className={props.className}>
+      <TopPart>
+        <UserCard user={props.user} />
+        <Spacer top={2} />
+        <Menu>
+          <MenuItem>
+            <a href="/">Morning</a>
+          </MenuItem>
+          <MenuItem>
+            <a href="/">All Habits</a>
+          </MenuItem>
+          <MenuItem>
+            <a href="/">Progress</a>
+          </MenuItem>
+          <MenuItem>
+            <a href="/">Manage Habits</a>
+          </MenuItem>
+          <MenuItem>
+            <a href="/">Resources</a>
+          </MenuItem>
+        </Menu>
+      </TopPart>
+      <BottomPart>
         <Button>
           <Plus />
           <span css={{ color: Color.White }}>Add New...</span>
         </Button>
-      </SidebarFooter>
-    </SidebarWrapper>
+      </BottomPart>
+    </Background>
   );
 };
 
