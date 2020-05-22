@@ -3,7 +3,6 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 
 import Sidebar from "./Sidebar";
-import UserCard from "./components/UserCard/UserCard";
 
 // A test user for all the following tests
 const testUser = {
