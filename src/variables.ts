@@ -12,6 +12,5 @@ export enum Color {
 // until we build the end points and replace them.
 export enum RoutePath {
   Home = "/",
-  SignOut = "/",
   Settings = "/settings",
 }

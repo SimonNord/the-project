@@ -44,11 +44,6 @@ const UserCard = (props: Props) => {
               <LinkText>Profile & Settings</LinkText>
             </Link>
           </ExpandedListItem>
-          <ExpandedListItem>
-            <Link css={{ textDecoration: "none" }} to={RoutePath.SignOut}>
-              <LinkText>Sign Out</LinkText>
-            </Link>
-          </ExpandedListItem>
         </ExpandedList>
       )}
     </div>
