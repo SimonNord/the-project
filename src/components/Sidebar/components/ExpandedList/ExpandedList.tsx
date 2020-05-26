@@ -31,13 +31,6 @@ export const ExpandedListItem = styled.span.attrs({
   display: block;
   font-size: 15px;
   font-weight: 500;
-  color: ${Color.CodGray};
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-
-  &:hover {
-    color: white;
-    background-color: ${Color.DodgerBlue};
-  }
 `;
 
 const ExpandedList = ({ children, direction }: Props) => {
