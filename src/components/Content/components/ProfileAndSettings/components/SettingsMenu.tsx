@@ -2,6 +2,7 @@ import React from "react";
 import MenuItem from "components/Menu/components/MenuItem";
 import AnchorLink from "components/AnchorLink/AnchorLink";
 import LinkText from "components/AnchorLink/components/LinkText";
+import { MenuListItem } from "components/Menu/components/MenuItem";
 import styled from "styled-components/macro";
 import { Color, RoutePath } from "variables";
 import Menu from "components/Menu/Menu";
@@ -14,7 +15,12 @@ const SettingsMenuWrapper = styled.div`
   border-radius: 5px 0 0 5px;
 `;
 
-const MenuList = styled.ul``;
+const SettingsListItem = styled(MenuListItem)`
+  margin-bottom: 0;
+  & a {
+    display: block;
+  }
+`;
 
 const SettingsMenu = () => {
   return (
