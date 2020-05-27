@@ -5,6 +5,7 @@ import { Color } from "variables";
 type Props = {
   children: ReactNode;
   type?: "primary" | void;
+  onClick?: React.MouseEventHandler<HTMLElement>;
 };
 
 const Button = (props: Props) => {
@@ -13,6 +14,7 @@ const Button = (props: Props) => {
 
   return (
     <button
+      onClick={props.onClick}
       css={`
         background-color: ${backgroundColor};
         border-radius: 3px;
@@ -22,6 +24,11 @@ const Button = (props: Props) => {
         font-size: 15px;
         display: flex;
         align-items: center;
+        cursor: pointer;
+
+        :focus {
+          outline-color: #c7dff3;
+        }
       `}
     >
       {props.children}
