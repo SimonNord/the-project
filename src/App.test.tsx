@@ -2,10 +2,6 @@ import React from "react";
 import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "./App";
-import UserCard from "./components/Sidebar/components/UserCard/UserCard";
-import ExpandedList, {
-  ExpandedListItem,
-} from "./components/Sidebar/components/ExpandedList/ExpandedList";
 
 const testUser = {
   firstName: "John",
