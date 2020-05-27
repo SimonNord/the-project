@@ -1,10 +1,8 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "styled-components/macro";
 import styled from "styled-components/macro";
-
 import { Color } from "variables";
-
 import Spacer from "../Spacer/Spacer";
 import UserCard from "./components/UserCard/UserCard";
 import { User } from "types";
@@ -12,6 +10,10 @@ import Menu from "../Menu/Menu";
 import MenuItem from "../Menu/components/MenuItem";
 import Button from "components/Button/Button";
 import { ReactComponent as plus } from "components/Sidebar/assets/plus.svg";
+import ExpandedList, {
+  ExpandedListItem,
+} from "./components/ExpandedList/ExpandedList";
+import { LinkText } from "./components/UserCard/styles";
 
 type Props = {
   className?: string;
@@ -34,6 +36,8 @@ const Plus = styled(plus)`
 `;
 
 const Sidebar = (props: Props) => {
+  let [show, setShow] = useState(false);
+
   return (
     <Container className={props.className}>
       <Spacer top={2} />
@@ -57,10 +61,32 @@ const Sidebar = (props: Props) => {
         </MenuItem>
       </Menu>
       <SidebarFooter>
-        <Button>
+        <Button onClick={() => setShow(!show)}>
           <Plus />
           <span css={{ color: Color.White }}>Add New...</span>
         </Button>
+        {show && (
+          <div
+            css={{
+              position: "relative",
+              width: "160%",
+              left: "-9px",
+            }}
+          >
+            <ExpandedList direction={true}>
+              <Link to="/" css={{ textDecoration: "none" }}>
+                <ExpandedListItem>
+                  <LinkText>Add Area</LinkText>
+                </ExpandedListItem>
+              </Link>
+              <Link to="/" css={{ textDecoration: "none" }}>
+                <ExpandedListItem>
+                  <LinkText>New Habit</LinkText>
+                </ExpandedListItem>
+              </Link>
+            </ExpandedList>
+          </div>
+        )}
       </SidebarFooter>
     </Container>
   );

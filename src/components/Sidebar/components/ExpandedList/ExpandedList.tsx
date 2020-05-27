@@ -4,6 +4,7 @@ import { Color } from "variables";
 
 type Props = {
   children: ReactNode;
+  direction?: boolean;
 };
 
 const StyledExpandedList = styled.div.attrs({
@@ -18,6 +19,10 @@ const StyledExpandedList = styled.div.attrs({
   background-color: ${Color.White};
   text-align: left;
   z-index: 999;
+`;
+
+const StyledExpandedListUp = styled(StyledExpandedList)`
+  bottom: 43px;
 `;
 
 export const ExpandedListItem = styled.span.attrs({
@@ -35,8 +40,12 @@ export const ExpandedListItem = styled.span.attrs({
   }
 `;
 
-const ExpandedList = ({ children }: Props) => {
-  return <StyledExpandedList>{children}</StyledExpandedList>;
+const ExpandedList = ({ children, direction }: Props) => {
+  if (direction) {
+    return <StyledExpandedListUp>{children}</StyledExpandedListUp>;
+  } else {
+    return <StyledExpandedList>{children}</StyledExpandedList>;
+  }
 };
 
 export default ExpandedList;
