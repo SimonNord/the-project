@@ -1,27 +1,53 @@
 import React from "react";
+import { MenuListItem } from "components/Menu/components/MenuItem";
+import { Link } from "react-router-dom";
+import { LinkText } from "components/Sidebar/components/UserCard/styles";
+/* import { Color } from "variables"; */
 import styled from "styled-components/macro";
-import SettingsMenuItem from "./SettingsMenuItem";
+import Menu from "components/Menu/Menu";
 
-const Menu = styled.div`
-  max-width: 300px;
+const SettingsMenuWrapper = styled.div`
+  width: 200px;
+  flex-shrink: 0;
   border: 1px solid #e5eafa;
-  border-right: 0;
-  border-radius: 3px;
+  border-right: none;
+  border-radius: 3px 0 0 3px;
 `;
 
-const MenuList = styled.ul``;
+const SettingsListItem = styled(MenuListItem)`
+  margin-bottom: 0;
+  & a {
+    display: block;
+  }
+`;
 
 const SettingsMenu = () => {
   return (
-    <Menu>
-      <MenuList>
-        <SettingsMenuItem path="/settings/general">General</SettingsMenuItem>
-        <SettingsMenuItem path="/settings/app-settings">
-          App Settings
-        </SettingsMenuItem>
-        <SettingsMenuItem path="/settings/password">Password</SettingsMenuItem>
-      </MenuList>
-    </Menu>
+    <SettingsMenuWrapper>
+      <Menu>
+        <SettingsListItem>
+          {/* AnchorLink */}{" "}
+          <Link to="/settings/general" /* linkColor="${Color.Black}" */>
+            <LinkText>General</LinkText>
+            {/* /AnchorLink */}
+          </Link>
+        </SettingsListItem>
+        <SettingsListItem>
+          {/* AnchorLink */}
+          <Link to="/settings/app-settings" /* linkColor="${Color.Black}" */>
+            <LinkText>App Settings</LinkText>
+            {/* AnchorLink */}
+          </Link>
+        </SettingsListItem>
+        <SettingsListItem>
+          {/* AnchorLink */}{" "}
+          <Link to="/settings/password" /* linkColor="${Color.Black}" */>
+            <LinkText>Password</LinkText>
+            {/* AnchorLink */}{" "}
+          </Link>
+        </SettingsListItem>
+      </Menu>
+    </SettingsMenuWrapper>
   );
 };
 
