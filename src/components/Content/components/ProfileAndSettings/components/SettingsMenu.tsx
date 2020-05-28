@@ -1,9 +1,9 @@
 import React from "react";
-import { MenuListItem } from "components/Menu/components/MenuItem";
-import { Link } from "react-router-dom";
-import { LinkText } from "components/Sidebar/components/UserCard/styles";
-/* import { Color } from "variables"; */
+import MenuItem from "components/Menu/components/MenuItem";
+import AnchorLink from "components/AnchorLink/AnchorLink";
+import LinkText from "components/AnchorLink/components/LinkText";
 import styled from "styled-components/macro";
+import { Color, RoutePath } from "variables";
 import Menu from "components/Menu/Menu";
 
 const SettingsMenuWrapper = styled.div`
@@ -14,38 +14,28 @@ const SettingsMenuWrapper = styled.div`
   border-radius: 3px 0 0 3px;
 `;
 
-const SettingsListItem = styled(MenuListItem)`
-  margin-bottom: 0;
-  & a {
-    display: block;
-  }
-`;
-
 const SettingsMenu = () => {
   return (
     <SettingsMenuWrapper>
       <Menu>
-        <SettingsListItem>
-          {/* AnchorLink */}{" "}
-          <Link to="/settings/general" /* linkColor="${Color.Black}" */>
+        <MenuItem>
+          <AnchorLink to={RoutePath.SettingsGeneral} linkColor={Color.Black}>
             <LinkText>General</LinkText>
-            {/* /AnchorLink */}
-          </Link>
-        </SettingsListItem>
-        <SettingsListItem>
-          {/* AnchorLink */}
-          <Link to="/settings/app-settings" /* linkColor="${Color.Black}" */>
+          </AnchorLink>
+        </MenuItem>
+        <MenuItem>
+          <AnchorLink
+            to={RoutePath.SettingsAppSettings}
+            linkColor={Color.Black}
+          >
             <LinkText>App Settings</LinkText>
-            {/* AnchorLink */}
-          </Link>
-        </SettingsListItem>
-        <SettingsListItem>
-          {/* AnchorLink */}{" "}
-          <Link to="/settings/password" /* linkColor="${Color.Black}" */>
+          </AnchorLink>
+        </MenuItem>
+        <MenuItem>
+          <AnchorLink to={RoutePath.SettingsPassword} linkColor={Color.Black}>
             <LinkText>Password</LinkText>
-            {/* AnchorLink */}{" "}
-          </Link>
-        </SettingsListItem>
+          </AnchorLink>
+        </MenuItem>
       </Menu>
     </SettingsMenuWrapper>
   );
