@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
 import "styled-components/macro";
-import styled from "styled-components/macro";
 import { Link } from "react-router-dom";
 import { Color, RoutePath } from "variables";
 
