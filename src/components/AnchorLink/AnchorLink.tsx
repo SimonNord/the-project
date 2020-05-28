@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 import { Color, RoutePath } from "variables";
 
 type Props = {
-  url: RoutePath;
+  to: RoutePath;
   linkColor?: Color.White | Color.Black;
   children: ReactNode;
 };
 
-export const AnchorLink = ({ url, linkColor, children }: Props) => {
+export const AnchorLink = ({ to, linkColor, children }: Props) => {
   return (
     <Link
-      to={url}
+      to={to}
       css={`
         display: flex;
         align-items: center;
@@ -26,6 +26,7 @@ export const AnchorLink = ({ url, linkColor, children }: Props) => {
           background-color: ${Color.DodgerBlue};
         }
       `}
+      role="menuitem"
     >
       {children}
     </Link>

@@ -26,7 +26,7 @@ export const AnchorLinkStory = () => (
   <div style={StorybookWhiteCentered}>
     <MemoryRouter>
       <Spacer top={2} right={2} bottom={2} left={2}>
-        <AnchorLink url={RoutePath.Home}>
+        <AnchorLink to={RoutePath.Home}>
           <LinkText>This is a Black Link</LinkText>
         </AnchorLink>
       </Spacer>
@@ -37,7 +37,7 @@ export const AnchorLinkStory = () => (
             background-color: black;
           `}
         >
-          <AnchorLink url={RoutePath.Home} linkColor={Color.White}>
+          <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
             <LinkText>This is a White Link on a Black background</LinkText>
           </AnchorLink>
         </div>

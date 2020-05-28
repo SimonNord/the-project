@@ -15,7 +15,12 @@ const testUser = {
 
 // Test for a UserCard
 test("should render a Sidebar with a UserCard", () => {
-  render(<Sidebar user={testUser} />);
+  render(
+    <MemoryRouter>
+      <Sidebar user={testUser} />
+    </MemoryRouter>
+  );
+
   const firstName = screen.queryByText(testUser.firstName);
   expect(firstName).toBeInTheDocument();
 });
@@ -28,7 +33,11 @@ test.each([
   ["Manage Habits"],
   ["Resources"],
 ])("should render a Sidebar with a link to %s", (menuItem) => {
-  render(<Sidebar user={testUser} />);
+  render(
+    <MemoryRouter>
+      <Sidebar user={testUser} />
+    </MemoryRouter>
+  );
 
   const menuItemResult = screen.queryByText(menuItem);
   expect(menuItemResult).toBeInTheDocument();
@@ -36,7 +45,12 @@ test.each([
 
 // Test for the presence of the sidebar footer button
 test("should render a Sidebar with an Add New button", () => {
-  render(<Sidebar user={testUser} />);
+  render(
+    <MemoryRouter>
+      <Sidebar user={testUser} />
+    </MemoryRouter>
+  );
+
   const footerButton = screen.queryByText("Add New...");
   expect(footerButton).toBeInTheDocument();
 });
@@ -52,13 +66,9 @@ test("Should expand button list when button is clicked", () => {
       <Sidebar user={testUser}></Sidebar>
     </MemoryRouter>
   );
-  expect(
-    screen.queryByRole("menuitem", { name: "Add Area" })
-  ).not.toBeInTheDocument(); // not expanded yet, should be invisible
+  expect(screen.queryByText("Add Area")).not.toBeInTheDocument(); // not expanded yet, should be invisible
   userEvent.click(screen.getByText("Add New...")); //Clicked on 'Add New...' button
-  expect(
-    screen.queryByRole("menuitem", { name: "Add Area" })
-  ).toBeInTheDocument(); // now it should be visible
+  expect(screen.queryByText("Add Area")).toBeInTheDocument(); // now it should be visible
 });
 
 test("Should collapse button list when button is clicked again", () => {
@@ -72,15 +82,9 @@ test("Should collapse button list when button is clicked again", () => {
       <Sidebar user={testUser}></Sidebar>
     </MemoryRouter>
   );
-  expect(
-    screen.queryByRole("menuitem", { name: "Add Area" })
-  ).not.toBeInTheDocument(); // not expanded yet, should be invisible
+  expect(screen.queryByText("Add Area")).not.toBeInTheDocument(); // not expanded yet, should be invisible
   userEvent.click(screen.getByText("Add New...")); //Clicked on 'Add New...' button
-  expect(
-    screen.queryByRole("menuitem", { name: "Add Area" })
-  ).toBeInTheDocument(); // now it should be visible
+  expect(screen.queryByText("Add Area")).toBeInTheDocument(); // now it should be visible
   userEvent.click(screen.getByText("Add New...")); //Clicked on 'Add New...' button again
-  expect(
-    screen.queryByRole("menuitem", { name: "Add Area" })
-  ).not.toBeInTheDocument(); //now it should not be visible agian
+  expect(screen.queryByText("Add Area")).not.toBeInTheDocument(); //now it should not be visible agian
 });

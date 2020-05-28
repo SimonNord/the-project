@@ -48,27 +48,27 @@ const Sidebar = (props: Props) => {
       <Spacer top={2} />
       <Menu>
         <MenuItem>
-          <AnchorLink url={RoutePath.Home} linkColor={Color.White}>
+          <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
             <LinkText>Afternoon</LinkText>
           </AnchorLink>
         </MenuItem>
         <MenuItem>
-          <AnchorLink url={RoutePath.Home} linkColor={Color.White}>
+          <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
             <LinkText>All Habits</LinkText>
           </AnchorLink>
         </MenuItem>
         <MenuItem>
-          <AnchorLink url={RoutePath.Home} linkColor={Color.White}>
+          <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
             <LinkText>Progress</LinkText>
           </AnchorLink>
         </MenuItem>
         <MenuItem>
-          <AnchorLink url={RoutePath.Home} linkColor={Color.White}>
+          <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
             <LinkText>Manage Habits</LinkText>
           </AnchorLink>
         </MenuItem>
         <MenuItem>
-          <AnchorLink url={RoutePath.Home} linkColor={Color.White}>
+          <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
             <LinkText>Resources</LinkText>
           </AnchorLink>
         </MenuItem>
@@ -88,16 +88,16 @@ const Sidebar = (props: Props) => {
             }}
           >
             <ExpandedList direction={true}>
-              <Link to="/" css={{ textDecoration: "none" }}>
-                <ExpandedListItem>
+              <ExpandedListItem>
+                <AnchorLink to={RoutePath.Home}>
                   <LinkText>Add Area</LinkText>
-                </ExpandedListItem>
-              </Link>
-              <Link to="/" css={{ textDecoration: "none" }}>
-                <ExpandedListItem>
-                  <LinkText>New Habit</LinkText>
-                </ExpandedListItem>
-              </Link>
+                </AnchorLink>
+              </ExpandedListItem>
+              <ExpandedListItem>
+                <AnchorLink to={RoutePath.Home}>
+                  <LinkText>New Habits</LinkText>
+                </AnchorLink>
+              </ExpandedListItem>
             </ExpandedList>
           </div>
         )}

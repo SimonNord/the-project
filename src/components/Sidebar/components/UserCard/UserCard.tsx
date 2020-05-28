@@ -42,7 +42,7 @@ const UserCard = (props: Props) => {
         <ExpandedList>
           <ExpandedListItem>
             <MemoryRouter>
-              <AnchorLink url={RoutePath.Settings}>
+              <AnchorLink to={RoutePath.Settings}>
                 <LinkText>Profile & Settings</LinkText>
               </AnchorLink>
             </MemoryRouter>
