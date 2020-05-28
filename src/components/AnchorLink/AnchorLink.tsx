@@ -16,8 +16,9 @@ export const AnchorLink = ({ to, linkColor, children }: Props) => {
       css={`
         display: flex;
         align-items: center;
-        color: ${linkColor};
         padding: 12px 15px;
+        font-size: 15px;
+        color: ${linkColor};
         text-decoration: none;
         transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
