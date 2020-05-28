@@ -1,19 +1,21 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "styled-components/macro";
 import styled from "styled-components/macro";
-import { Color } from "variables";
+
+import { Color, RoutePath } from "variables";
+
 import Spacer from "../Spacer/Spacer";
 import UserCard from "./components/UserCard/UserCard";
 import { User } from "types";
 import Menu from "../Menu/Menu";
 import MenuItem from "../Menu/components/MenuItem";
+import AnchorLink from "../AnchorLink/AnchorLink";
+import LinkText from "../AnchorLink/components/LinkText";
 import Button from "components/Button/Button";
 import { ReactComponent as plus } from "components/Sidebar/assets/plus.svg";
 import ExpandedList, {
   ExpandedListItem,
 } from "./components/ExpandedList/ExpandedList";
-import { LinkText } from "./components/UserCard/styles";
 
 type Props = {
   className?: string;
@@ -45,21 +47,32 @@ const Sidebar = (props: Props) => {
       <Spacer top={2} />
       <Menu>
         <MenuItem>
-          <a href="/">Afternoon</a>
+          <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
+            <LinkText>Afternoon</LinkText>
+          </AnchorLink>
         </MenuItem>
         <MenuItem>
-          <a href="/">All Habits</a>
+          <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
+            <LinkText>All Habits</LinkText>
+          </AnchorLink>
         </MenuItem>
         <MenuItem>
-          <a href="/">Progress</a>
+          <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
+            <LinkText>Progress</LinkText>
+          </AnchorLink>
         </MenuItem>
         <MenuItem>
-          <a href="/">Manage Habits</a>
+          <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
+            <LinkText>Manage Habits</LinkText>
+          </AnchorLink>
         </MenuItem>
         <MenuItem>
-          <a href="/">Resources</a>
+          <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
+            <LinkText>Resources</LinkText>
+          </AnchorLink>
         </MenuItem>
       </Menu>
+
       <SidebarFooter>
         <Button onClick={() => setShow(!show)}>
           <Plus />
@@ -74,16 +87,16 @@ const Sidebar = (props: Props) => {
             }}
           >
             <ExpandedList direction={true}>
-              <Link to="/" css={{ textDecoration: "none" }}>
-                <ExpandedListItem>
+              <ExpandedListItem>
+                <AnchorLink to={RoutePath.Home}>
                   <LinkText>Add Area</LinkText>
-                </ExpandedListItem>
-              </Link>
-              <Link to="/" css={{ textDecoration: "none" }}>
-                <ExpandedListItem>
-                  <LinkText>New Habit</LinkText>
-                </ExpandedListItem>
-              </Link>
+                </AnchorLink>
+              </ExpandedListItem>
+              <ExpandedListItem>
+                <AnchorLink to={RoutePath.Home}>
+                  <LinkText>New Habits</LinkText>
+                </AnchorLink>
+              </ExpandedListItem>
             </ExpandedList>
           </div>
         )}

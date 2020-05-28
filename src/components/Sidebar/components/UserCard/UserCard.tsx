@@ -3,7 +3,9 @@ import "styled-components/macro";
 import { User } from "types";
 import avatar from "./assets/avatar-image.png";
 import ExpandedList, { ExpandedListItem } from "../ExpandedList/ExpandedList";
-import { Link } from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
+import AnchorLink from "../../../AnchorLink/AnchorLink";
+import LinkText from "../../../AnchorLink/components/LinkText";
 import { RoutePath } from "variables";
 
 /* Import styles */
@@ -15,7 +17,6 @@ import {
   Username,
   Email,
   ArrowDown,
-  LinkText,
 } from "./styles";
 
 type Props = {
@@ -40,9 +41,11 @@ const UserCard = (props: Props) => {
       {show && (
         <ExpandedList>
           <ExpandedListItem>
-            <Link css={{ textDecoration: "none" }} to={RoutePath.Settings}>
-              <LinkText>Profile & Settings</LinkText>
-            </Link>
+            <MemoryRouter>
+              <AnchorLink to={RoutePath.Settings}>
+                <LinkText>Profile & Settings</LinkText>
+              </AnchorLink>
+            </MemoryRouter>
           </ExpandedListItem>
         </ExpandedList>
       )}

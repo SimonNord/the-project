@@ -41,13 +41,9 @@ it("should expand when being clicked", () => {
     </MemoryRouter>
   );
 
-  expect(
-    screen.queryByRole("menuitem", { name: "Profile & Settings" })
-  ).not.toBeInTheDocument(); // not expanded yet, should be invisible
+  expect(screen.queryByText("Profile & Settings")).not.toBeInTheDocument(); // not expanded yet, should be invisible
   userEvent.click(screen.queryByText(testUser.firstName)); // now I clicked on the card (in this case firstName, but could have been anything else)
-  expect(
-    screen.queryByRole("menuitem", { name: "Profile & Settings" })
-  ).toBeInTheDocument(); // now it should be visible
+  expect(screen.queryByText("Profile & Settings")).toBeInTheDocument(); // now it should be visible
 });
 
 it("should collapse when clicked again", () => {
