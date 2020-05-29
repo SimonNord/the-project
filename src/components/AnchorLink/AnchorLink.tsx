@@ -16,15 +16,27 @@ export const AnchorLink = ({ to, linkColor, children }: Props) => {
       css={`
         display: flex;
         align-items: center;
-        padding: 12px 15px;
         font-size: 15px;
         color: ${linkColor};
+        padding: 12px 15px;
         text-decoration: none;
         transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
         &:hover {
           color: ${Color.White};
           background-color: ${Color.DodgerBlue};
+        }
+
+        & svg {
+          display: flex;
+          align-items: vertical;
+          color: ${Color.GreySeeThru};
+          margin-right: 8px;
+          transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+
+        &:hover svg {
+          color: ${Color.White};
         }
       `}
       role="menuitem"
@@ -39,3 +51,7 @@ AnchorLink.defaultProps = {
 };
 
 export default AnchorLink;
+
+/*        // &:hover ${Kid} {
+        //   display: none;
+        // } */

@@ -15,6 +15,12 @@ import Button from "components/Button/Button";
 import { ReactComponent as plus } from "components/Sidebar/assets/plus.svg";
 import ExpandedList from "./components/ExpandedList/ExpandedList";
 
+import Brightness5Icon from "@material-ui/icons/Brightness5";
+import PlaylistAddCheckIcon from "@material-ui/icons/PlaylistAddCheck";
+import TimelineIcon from "@material-ui/icons/Timeline";
+import FolderIcon from "@material-ui/icons/Folder";
+import EmojiObjectsIcon from "@material-ui/icons/EmojiObjects";
+
 type Props = {
   className?: string;
   user: User;
@@ -46,26 +52,31 @@ const Sidebar = (props: Props) => {
       <Menu>
         <MenuItem>
           <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
+            <Brightness5Icon />
             <LinkText>Afternoon</LinkText>
           </AnchorLink>
         </MenuItem>
         <MenuItem>
           <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
+            <PlaylistAddCheckIcon />
             <LinkText>All Habits</LinkText>
           </AnchorLink>
         </MenuItem>
         <MenuItem>
           <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
+            <TimelineIcon />
             <LinkText>Progress</LinkText>
           </AnchorLink>
         </MenuItem>
         <MenuItem>
           <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
+            <FolderIcon />
             <LinkText>Manage Habits</LinkText>
           </AnchorLink>
         </MenuItem>
         <MenuItem>
           <AnchorLink to={RoutePath.Home} linkColor={Color.White}>
+            <EmojiObjectsIcon />
             <LinkText>Resources</LinkText>
           </AnchorLink>
         </MenuItem>
