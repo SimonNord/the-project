@@ -2,7 +2,8 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import UserCard from "./UserCard";
 import userEvent from "@testing-library/user-event";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter, Route } from "react-router-dom";
+import { RoutePath } from "variables";
 
 it("should render the first name", () => {
   const testUser = {
@@ -66,4 +67,30 @@ it("should collapse when clicked again", () => {
 
   userEvent.click(screen.queryByText(testUser.firstName)); // now I clicked on the card (in this case firstName, but could have been anything else)
   expect(screen.queryByText("Profile & Settings")).not.toBeInTheDocument(); // collapsed again, should be invisible
+});
+
+it("should redirect to settings", () => {
+  const testUser = {
+    firstName: "John",
+    lastName: "Doe",
+    email: "john@doe.com",
+  };
+  render(
+    <MemoryRouter>
+      <UserCard
+        user={{
+          firstName: "John",
+          lastName: "Doe",
+          email: "john@doe.com",
+        }}
+      />
+      <Route path={RoutePath.Settings}>Only visible when on /settings</Route>
+    </MemoryRouter>
+  );
+  expect(screen.queryByText("Profile & Settings")).not.toBeInTheDocument(); // not expanded yet, should be invisible
+  userEvent.click(screen.queryByText(testUser.firstName));
+  userEvent.click(screen.queryByText("Profile & Settings"));
+  expect(
+    screen.queryByText("Only visible when on /settings")
+  ).toBeInTheDocument();
 });
