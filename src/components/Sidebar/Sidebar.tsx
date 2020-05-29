@@ -87,16 +87,18 @@ const Sidebar = (props: Props) => {
             }}
           >
             <ExpandedList direction={true}>
-              <ExpandedListItem>
-                <AnchorLink to={RoutePath.Home}>
-                  <LinkText>Add Area</LinkText>
-                </AnchorLink>
-              </ExpandedListItem>
-              <ExpandedListItem>
-                <AnchorLink to={RoutePath.Home}>
-                  <LinkText>New Habits</LinkText>
-                </AnchorLink>
-              </ExpandedListItem>
+              <Menu>
+                <MenuItem>
+                  <AnchorLink to={RoutePath.Home}>
+                    <LinkText>Add Area</LinkText>
+                  </AnchorLink>
+                </MenuItem>
+                <MenuItem>
+                  <AnchorLink to={RoutePath.Home}>
+                    <LinkText>New Habits</LinkText>
+                  </AnchorLink>
+                </MenuItem>
+              </Menu>
             </ExpandedList>
           </div>
         )}
