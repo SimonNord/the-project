@@ -51,7 +51,3 @@ AnchorLink.defaultProps = {
 };
 
 export default AnchorLink;
-
-/*        // &:hover ${Kid} {
-        //   display: none;
-        // } */
