@@ -13,9 +13,7 @@ import AnchorLink from "../AnchorLink/AnchorLink";
 import LinkText from "../AnchorLink/components/LinkText";
 import Button from "components/Button/Button";
 import { ReactComponent as plus } from "components/Sidebar/assets/plus.svg";
-import ExpandedList, {
-  ExpandedListItem,
-} from "./components/ExpandedList/ExpandedList";
+import ExpandedList from "./components/ExpandedList/ExpandedList";
 
 type Props = {
   className?: string;

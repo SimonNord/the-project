@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "styled-components/macro";
 import { User } from "types";
 import avatar from "./assets/avatar-image.png";
-import ExpandedList, { ExpandedListItem } from "../ExpandedList/ExpandedList";
+import ExpandedList from "../ExpandedList/ExpandedList";
 import AnchorLink from "../../../AnchorLink/AnchorLink";
 import LinkText from "../../../AnchorLink/components/LinkText";
 import { RoutePath } from "variables";
