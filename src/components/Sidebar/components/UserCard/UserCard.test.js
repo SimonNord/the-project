@@ -77,13 +77,7 @@ it("should redirect to settings", () => {
   };
   render(
     <MemoryRouter>
-      <UserCard
-        user={{
-          firstName: "John",
-          lastName: "Doe",
-          email: "john@doe.com",
-        }}
-      />
+      <UserCard user={testUser} />
       <Route path={RoutePath.Settings}>Only visible when on /settings</Route>
     </MemoryRouter>
   );
