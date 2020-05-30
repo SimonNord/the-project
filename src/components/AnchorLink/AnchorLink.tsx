@@ -2,6 +2,8 @@ import React, { ReactNode } from "react";
 import "styled-components/macro";
 import { Link } from "react-router-dom";
 import { Color, RoutePath } from "variables";
+import FormattedText from "components/FormattedText/FormattedText";
+import Spacer from "components/Spacer/Spacer";
 
 type Props = {
   to: RoutePath;
@@ -14,22 +16,29 @@ export const AnchorLink = ({ to, linkColor, children }: Props) => {
     <Link
       to={to}
       css={`
-        display: flex;
-        align-items: center;
-        padding: 12px 15px;
-        font-size: 15px;
-        color: ${linkColor};
         text-decoration: none;
-        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-
-        &:hover {
-          color: ${Color.White};
-          background-color: ${Color.DodgerBlue};
-        }
       `}
-      role="menuitem"
     >
-      {children}
+      <div
+        css={`
+          display: flex;
+          align-items: center;
+          transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+          &:hover {
+            background-color: ${Color.DodgerBlue};
+            ${FormattedText} {
+              color: ${Color.White};
+            }
+          }
+        `}
+        role="menuitem"
+      >
+        <Spacer top={1} bottom={1} left={2}>
+          <FormattedText size="0" weight="regular" color={linkColor}>
+            {children}
+          </FormattedText>
+        </Spacer>
+      </div>
     </Link>
   );
 };

@@ -1,27 +1,20 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { Color } from "variables";
-import "styled-components/macro";
+import styled from "styled-components/macro";
 
 export type Props = {
   children: ReactNode;
-  color: Color;
-  weight: "regular" | "medium" | "bold";
-  size: "-2" | "-1" | "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8";
+  className?: string;
+  color?: Color;
+  weight?: "regular" | "medium" | "bold";
+  size?: "-2" | "-1" | "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8";
 };
 
-const FormattedText = (props: Props) => {
-  return (
-    <span
-      css={`
-        font-size: ${fontSizes[props.size]};
-        font-weight: ${fontWeights[props.weight]};
-        color: ${props.color};
-      `}
-    >
-      {props.children}
-    </span>
-  );
-};
+const FormattedText = styled.span<Props>`
+  font-size: ${(props) => fontSizes[props.size!]};
+  font-weight: ${(props) => fontWeights[props.weight!]};
+  color: ${(props) => props.color};
+`;
 
 FormattedText.defaultProps = {
   color: Color.Black,
