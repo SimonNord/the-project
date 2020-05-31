@@ -6,7 +6,7 @@ import styled from "styled-components/macro";
 import { Color, RoutePath } from "variables";
 import Menu from "components/Menu/Menu";
 
-const SettingsMenuWrapper = styled.div`
+const StyledSettingsMenu = styled(Menu)`
   width: 300px;
   flex-shrink: 0;
   border: 1px solid #e5eafa;
@@ -20,7 +20,7 @@ const MenuListItemP0 = styled(MenuListItem)`
 
 const SettingsMenu = () => {
   return (
-    <SettingsMenuWrapper>
+    <StyledSettingsMenu>
       <Menu>
         <MenuListItemP0>
           <AnchorLink to={RoutePath.SettingsGeneral} linkColor={Color.Black}>
@@ -41,7 +41,7 @@ const SettingsMenu = () => {
           </AnchorLink>
         </MenuListItemP0>
       </Menu>
-    </SettingsMenuWrapper>
+    </StyledSettingsMenu>
   );
 };
 

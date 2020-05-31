@@ -25,3 +25,14 @@ it("Password Settings should only be visible after clicking the link", () => {
   userEvent.click(screen.queryByText("Password"));
   expect(screen.getByText("Password Settings")).toBeInTheDocument();
 });
+
+it("Application Settings should only be visible after clicking the link", () => {
+  render(
+    <MemoryRouter>
+      <ProfileAndSettings />
+    </MemoryRouter>
+  );
+  expect(screen.queryByText("Application Settings")).not.toBeInTheDocument();
+  userEvent.click(screen.queryByText("App Settings"));
+  expect(screen.getByText("Application Settings")).toBeInTheDocument();
+});

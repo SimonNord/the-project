@@ -3,11 +3,12 @@ import "styled-components/macro";
 
 type Props = {
   children: ReactNode;
+  className?: string;
 };
 
-const Menu = ({ children }: Props) => {
+const Menu = ({ children, className }: Props) => {
   return (
-    <nav role="navigation">
+    <nav role="navigation" className={className}>
       <ul>{children}</ul>
     </nav>
   );

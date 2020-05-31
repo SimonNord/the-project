@@ -9,7 +9,7 @@ const AppS = styled.div`
 `;
 
 const AppSettings = () => {
-  return <AppS>App Settings</AppS>;
+  return <AppS>Application Settings</AppS>;
 };
 
 export default AppSettings;
