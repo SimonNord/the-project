@@ -21,26 +21,21 @@ const MenuListItemP0 = styled(MenuListItem)`
 const SettingsMenu = () => {
   return (
     <StyledSettingsMenu>
-      <Menu>
-        <MenuListItemP0>
-          <AnchorLink to={RoutePath.SettingsGeneral} linkColor={Color.Black}>
-            <LinkText>General</LinkText>
-          </AnchorLink>
-        </MenuListItemP0>
-        <MenuListItemP0>
-          <AnchorLink
-            to={RoutePath.SettingsAppSettings}
-            linkColor={Color.Black}
-          >
-            <LinkText>App Settings</LinkText>
-          </AnchorLink>
-        </MenuListItemP0>
-        <MenuListItemP0>
-          <AnchorLink to={RoutePath.SettingsPassword} linkColor={Color.Black}>
-            <LinkText>Password</LinkText>
-          </AnchorLink>
-        </MenuListItemP0>
-      </Menu>
+      <MenuListItemP0>
+        <AnchorLink to={RoutePath.SettingsGeneral} linkColor={Color.Black}>
+          <LinkText>General</LinkText>
+        </AnchorLink>
+      </MenuListItemP0>
+      <MenuListItemP0>
+        <AnchorLink to={RoutePath.SettingsAppSettings} linkColor={Color.Black}>
+          <LinkText>App Settings</LinkText>
+        </AnchorLink>
+      </MenuListItemP0>
+      <MenuListItemP0>
+        <AnchorLink to={RoutePath.SettingsPassword} linkColor={Color.Black}>
+          <LinkText>Password</LinkText>
+        </AnchorLink>
+      </MenuListItemP0>
     </StyledSettingsMenu>
   );
 };

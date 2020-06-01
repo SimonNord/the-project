@@ -12,15 +12,19 @@ const ProfileSettingsContainer = styled.div`
   flex-direction: row;
 `;
 
-const PageTitle = styled.div`
-  padding: 16px;
+const PageTitle = styled.h1`
+  font-size: 20px;
   border: 1px solid #e5eafa;
 `;
 
 const ProfileAndSettings = () => {
   return (
     <div>
-      <PageTitle>Profile And Settings</PageTitle>
+      <PageTitle>
+        <Spacer top={1} right={1} bottom={1} left={1}>
+          Profile And Settings
+        </Spacer>
+      </PageTitle>
       <Spacer top={2} right={2} bottom={2} left={2}>
         <ProfileSettingsContainer>
           <SettingsMenu />
