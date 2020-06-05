@@ -18,7 +18,7 @@ const StorybookWhiteCentered = {
 
 export const InputStory = () => (
   <div style={StorybookWhiteCentered}>
-    <Input type="text" placeholder="Name"></Input>
+    <Input type="text" placeholder="Name" />
   </div>
 );
 
