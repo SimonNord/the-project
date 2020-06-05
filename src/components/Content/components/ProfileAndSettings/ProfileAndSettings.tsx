@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router";
+import { Switch, Route } from "react-router-dom";
 import styled from "styled-components";
 import SettingsMenu from "./components/SettingsMenu";
 import General from "./components/General";
