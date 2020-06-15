@@ -14,7 +14,6 @@ it("should allow you to go to settings", () => {
 
   userEvent.click(getByText(testUser.firstName));
   userEvent.click(getByText("Profile & Settings"));
-
-  const profileAndSettingsText = getByText("Profile And Settings");
-  expect(profileAndSettingsText).toBeInTheDocument();
+  const generalSettingsText = getByText("App Settings");
+  expect(generalSettingsText).toBeInTheDocument(); // Should be visible
 });

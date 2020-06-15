@@ -13,4 +13,7 @@ export enum Color {
 export enum RoutePath {
   Home = "/",
   Settings = "/settings",
+  SettingsGeneral = "/settings/general",
+  SettingsAppSettings = "/settings/app-settings",
+  SettingsPassword = "/settings/password",
 }

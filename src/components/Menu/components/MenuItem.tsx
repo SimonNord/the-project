@@ -6,7 +6,7 @@ type Props = {
   children: ReactNode;
 };
 
-const MenuListItem = styled.li`
+export const MenuListItem = styled.li`
   list-style-type: none;
   margin-bottom: 8px;
 `;

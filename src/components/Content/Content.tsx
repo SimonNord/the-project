@@ -1,8 +1,8 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
 import styled from "styled-components/macro";
 import NoContentPlaceholder from "./components/NoContentPlaceholder/NoContentPlaceholder";
-import ProfileAndSettings from "./components/ProfileAndSettings";
-import { Switch, Route } from "react-router-dom";
+import ProfileAndSettings from "./components/ProfileAndSettings/ProfileAndSettings";
 import { RoutePath } from "variables";
 
 type Props = {
@@ -12,7 +12,6 @@ type Props = {
 const FullHeightAndWidth = styled.div`
   width: 100%;
   height: 100%;
-  margin: auto;
 `;
 
 const Content = (props: Props) => {
