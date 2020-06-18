@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import styled from "styled-components";
 import SettingsMenu from "./components/SettingsMenu";
 import General from "./components/General";
@@ -28,6 +28,7 @@ const ProfileAndSettings = () => {
       <Spacer top={2} right={2} bottom={2} left={2}>
         <ProfileSettingsContainer>
           <SettingsMenu />
+          <Redirect exact from="/settings" to="/settings/general" />
           <Switch>
             <Route path="/settings/general">
               <General />
