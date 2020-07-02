@@ -10,7 +10,7 @@ it("General Settings should only be visible after clicking the link", () => {
       <ProfileAndSettings />
     </MemoryRouter>
   );
-  expect(screen.queryByText("General Settings")).not.toBeInTheDocument();
+  expect(screen.queryByText("General Settings")).toBeInTheDocument();
   userEvent.click(screen.queryByText("General"));
   expect(screen.getByText("General Settings")).toBeInTheDocument();
 });
