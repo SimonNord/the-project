@@ -61,7 +61,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "5.3.19",
-    "@storybook/addon-backgrounds": "5.3.19",
+    "@storybook/addon-backgrounds": "6.0.21",
     "@storybook/addon-links": "5.3.19",
     "@storybook/addons": "5.3.19",
     "@storybook/preset-create-react-app": "3.0.1",
